@@ -33,7 +33,7 @@ export default function Home() {
                                             <li><a aria-label="Интеграл" href="https://qqqqbbpp.github.io/math/operations#5b">Интеграл</a></li>
                                         </ol>
                                     </li>
-                                    <li><a aria-label="Свойства" href="https://qqqqbbpp.github.io/math/operations#6">Свойства операций</a>
+                                    <li><a aria-label="Свойства" href="https://qqqqbbpp.github.io/math/operations#6">Свойства</a>
                                         <ol className="lower-latin">
                                             <li><a aria-label="Коммутативность" href="https://qqqqbbpp.github.io/math/operations#6a">Коммутативность</a></li>
                                             <li><a aria-label="Ассоциативность" href="https://qqqqbbpp.github.io/math/operations#6b">Ассоциативность</a></li>
