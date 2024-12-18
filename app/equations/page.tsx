@@ -33,7 +33,7 @@ useEffect(() => {
                                     <p>Квадратные уравнения&nbsp;&mdash; это уравнения которые имеют в&nbsp;себе степень <Latex>{`$=2,$`}</Latex> но не более.</p>
                                     <p><Latex>{`$ax^2 + bx + c = 0$`}</Latex></p>
                                     <p><Latex>{`$x_{1,2} = \\cfrac{-b\\pm\\sqrt{b^2-4ac}}{a}$`}</Latex></p>
-                                <h4 id="1a1b">Высших степеней</h4>
+                                <h4 id="1a1c">Высших степеней</h4>
                                     <p>Уравнения высших степеней&nbsp;&mdash; это уравнения которые имеют в&nbsp;себе степень <Latex>{`$>2$`}</Latex>.</p>
                                     <p><Latex>{`$P(x)=a_n x^n + a_{n-1} x^{n-1}+\\ldots+a_1 x + a_0 = 0$`}</Latex></p>
                                     <p>По&nbsp;теореме о&nbsp;рациональных корнях возможные корни: <Latex>{`$x = \\frac{p}{q}$`}</Latex>, где <Latex>{`$p$`}</Latex>&nbsp;&mdash; делитель свободного члена <Latex>{`$a_0$`}</Latex>, <Latex>{`$q$`}</Latex>&nbsp;&mdash; делитель старшего коэффициента&nbsp;<Latex>{`$a_n$`}</Latex>. Проверяем найденный корень <Latex>{`$x=r$`}</Latex>&nbsp;методом подстановки <Latex>{`$P(r) = 0$`}</Latex> и&nbsp;делим многочлен <Latex>{`$P(x)$`}</Latex> на&nbsp;<Latex>{`$(x - r)$`}</Latex> пока не&nbsp;получим квадратное уравнение. </p>

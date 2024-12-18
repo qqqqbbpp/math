@@ -33,7 +33,7 @@ export default function Home() {
                                             <li><a aria-label="Интеграл" href="https://qqqqbbpp.github.io/math/operations#5b">Интеграл</a></li>
                                         </ol>
                                     </li>
-                                    <li><a aria-label="Свойства" href="https://qqqqbbpp.github.io/operations#6">Свойства операций</a>
+                                    <li><a aria-label="Свойства" href="https://qqqqbbpp.github.io/math/operations#6">Свойства операций</a>
                                         <ol className="lower-latin">
                                             <li><a aria-label="Коммутативность" href="https://qqqqbbpp.github.io/math/operations#6a">Коммутативность</a></li>
                                             <li><a aria-label="Ассоциативность" href="https://qqqqbbpp.github.io/math/operations#6b">Ассоциативность</a></li>
@@ -148,7 +148,7 @@ export default function Home() {
                                     </li>
                                     <li><a aria-label="Случайные величины" href="https://qqqqbbpp.github.io/math/probabilities#5">Случайные величины</a>
                                         <ol className="lower-latin">
-                                            <li><a aria-label="Классификация случайных величин" href="https://qqqqbbpp.github.io/math/probabilities#5a">Классификация случайных величин</a></li>
+                                            <li><a aria-label="Классификация случайных величин" href="https://qqqqbbpp.github.io/math/probabilities#5a">Классификация</a></li>
                                             <li><a aria-label="Закон распределения случайной величины" href="https://qqqqbbpp.github.io/math/probabilities#5b">Закон распределения случайной величины</a></li>
                                             <li><a aria-label="Закон распределения случайной величины" href="https://qqqqbbpp.github.io/math/probabilities#5c">Операции над случайными величинами</a></li>
                                         </ol>
