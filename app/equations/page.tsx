@@ -61,8 +61,8 @@ useEffect(() => {
                 </div>
             </main>
             <Footer 
-                prevPage="Числа" prevHref="/numbers" 
-                nextPage="Функции" nextHref="/functions" 
+                prevPage="Числа" prevHref="/math/numbers" 
+                nextPage="Функции" nextHref="/math/functions" 
             />
         </>
     )

@@ -92,8 +92,8 @@ useEffect(() => {
                 </div>
             </main>
             <Footer 
-                prevPage="Оглавление" prevHref="http://localhost:3000" 
-                nextPage="Числа" nextHref="/numbers" 
+                prevPage="Оглавление" prevHref="/math" 
+                nextPage="Числа" nextHref="/math/numbers" 
             />
         </>
     )

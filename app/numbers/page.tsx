@@ -138,8 +138,8 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                 </div>
             </main>
             <Footer 
-                prevPage="Операции" prevHref="/operations" 
-                nextPage="Уравнения" nextHref="/equations" 
+                prevPage="Операции" prevHref="/math/operations" 
+                nextPage="Уравнения" nextHref="/math/equations" 
             />  
         </>
     )
