@@ -92,8 +92,8 @@ useEffect(() => {
                 </div>
             </main>
             <Footer 
-                prevPage="Оглавление" prevHref="/math" 
-                nextPage="Числа" nextHref="/math/numbers" 
+                prevPage="Оглавление" prevHref="https://qqqqbbpp.github.io/math" 
+                nextPage="Числа" nextHref="https://qqqqbbpp.github.io/math/numbers" 
             />
         </>
     )

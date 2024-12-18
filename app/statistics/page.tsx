@@ -246,7 +246,7 @@ useEffect(() => {
                 </div>
             </main>
             <Footer 
-                prevPage="Вероятности" prevHref="/math/probabilities" 
+                prevPage="Вероятности" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
                 nextPage="..." nextHref="#" 
             />
         </>

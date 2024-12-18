@@ -796,8 +796,8 @@ useEffect(() => {
                 </div>	
             </main>
             <Footer 
-                prevPage="Функции" prevHref="/math/functions" 
-                nextPage="Статистика" nextHref="/math/statistics" 
+                prevPage="Функции" prevHref="https://qqqqbbpp.github.io/math/functions" 
+                nextPage="Статистика" nextHref="https://qqqqbbpp.github.io/math/statistics" 
             />
         </>
     )
