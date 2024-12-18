@@ -1,6 +1,6 @@
 "use client"
 import Header from "@/app/components/Header";
-import { useEffect, useState} from "react";
+import { useEffect } from "react";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import { Mafs, Coordinates, Line, useMovablePoint, Plot, Transform} from "mafs"
