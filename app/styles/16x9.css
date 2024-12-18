@@ -1,0 +1,17 @@
+@media (min-aspect-ratio: 16/9) {
+    .main {
+        margin: 0 20svw 0 20svw;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: var(--large-16x9-font);
+    }
+    
+    p, a, details, li::marker, table, button {
+        font-size: var(--regular-16x9-font);
+    }
+
+    foreignObject, text {
+        font-size: var(--small-16x9-font);
+    }
+}

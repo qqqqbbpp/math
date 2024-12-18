@@ -1,0 +1,185 @@
+@import "mafs/core.css";
+
+:root {
+    --large-9x16-font: calc(1rem + 9/16 * 1svh + 1svw);
+    --regular-9x16-font: calc(1rem + 9/16 * 0.5svh + 0.5svw);
+    --small-9x16-font: calc(1rem + 9/16 * 0.25svh + 0.25svw);
+
+    --large-4x3-font: calc(1rem + 4/3 * 1svh + 1svw);
+    --regular-4x3-font: calc(1rem + 4/3 * 0.5svh + 0.5svw);
+    --small-4x3-font: calc(1rem + 4/3 * 0.25svh + 0.25svw);
+    
+    --large-16x9-font: calc(1rem + 16/9 * 1svh + 1svw);
+    --regular-16x9-font: calc(1rem + 16/9 * 0.5svh + 0.5svw);
+    --small-16x9-font: calc(1rem + 16/9 * 0.25svh + 0.25svw);
+
+    --blue: #0089ff;
+    --purple: #b40eb4;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    shape-rendering: geometricPrecision;
+}
+
+*::selection {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+html {
+    overflow: hidden;
+    scroll-padding-top: 10svh;
+    font: 10px var(--pt-serif);
+}
+
+header {
+    height: 10svh;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.logo-0, .logo-1, .logo-link {
+    height: 7.5svh;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: 0.5s opacity cubic-bezier(0.455, 0.05, 0.515, 0.955);
+}
+
+.logo-0 {
+    z-index: 1;
+}
+
+.logo-0:hover ~ .logo-1, 
+.logo-link:focus > .logo-1 {
+    opacity: 0;
+}
+
+.logo-0:hover,
+.logo-link:focus > .logo-0 {
+    opacity: 1;
+}
+
+main {
+    height: 0;
+    min-height: 80svh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color:#000 #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+main:focus {
+    outline: none;
+}
+
+.table-of-contents {
+    display: grid;
+    justify-items: center;
+}
+
+summary {
+    cursor: pointer;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:not(ul > li) {
+    margin: 0 0 0 5svw;
+}
+
+.lower-latin {
+    list-style-type: lower-latin;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--purple);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 2.5svh 0;
+}
+
+.MafsView {
+    cursor: grab;
+    margin: 0 0 2.5svh 0;
+    outline-color: #000!important;
+    outline-offset: 0.25svh;
+}
+
+.MafsView:active {
+    cursor: grabbing;
+}
+
+.button {
+    display: grid;
+    justify-items: end;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    padding: 0.5svh 0.25svw 0.5svh 0.25svw;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;	
+}
+
+button:focus {
+    background-color: #000;
+    color: #fff;	
+}
+
+button:disabled {
+    background-color: #fff;
+    color: #000;
+    cursor: default;
+} 
+
+table, td {
+    width: 100%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 0 2.5svh 0;
+}
+
+footer {
+    height: 10svh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: #000;
+}
