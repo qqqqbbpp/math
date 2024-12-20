@@ -272,10 +272,10 @@ useEffect(() => {
                                 />
                                 <LaTeX at={[1, -0.25]} tex={String.raw`x_1`}/>
                                 <LaTeX at={[2, -0.25]} tex={String.raw`x_2`}/>
-                                <LaTeX at={[6, -0.25]} tex={String.raw`x_3`}/>
+                                <LaTeX at={[6, -0.25]} tex={String.raw`x_n`}/>
                                 <LaTeX at={[0.25, 1]} tex={String.raw`P_1`}/>
                                 <LaTeX at={[0.25, 2]} tex={String.raw`P_2`}/>
-                                <LaTeX at={[0.25, 3]} tex={String.raw`P_3`}/>
+                                <LaTeX at={[0.25, 3]} tex={String.raw`P_n`}/>
                                 <Polyline points={[[1, 1], [2, 3], [6, 2]]}/>
                             </Mafs>
                         <h3 id="5c">Операции над случайными величинами</h3>
