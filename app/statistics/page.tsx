@@ -220,10 +220,10 @@ useEffect(() => {
                             <p>Если требуется сравнить и сделть вывод о том какая из генеральных средних больше или меньше используется <Latex>{`$H_1', ~H_1''.$`}</Latex></p>
                             <p>Если требуется проверить различия генеральных средних, используется <Latex>{`$H_1'''.$`}</Latex></p>
                             <p>Задают уровень значимости <Latex>{`$\\alpha = P_{H_0} (H_1).$`}</Latex> Инструментом проверки является случайная величина <Latex>{`$T$`}</Latex>, имеющая распределение Стьюдента с параметром <Latex>{`$k$`}</Latex>.</p>
-                            <p><Latex>{`$k = n_x - n_y - 2$`}</Latex></p>
+                            <p><Latex>{`$k = n_x + n_y - 2$`}</Latex></p>
                             <p><Latex>{`$f(T) = \\frac{\\Gamma (\\frac{n+1}{2})}{\\sqrt{n \\pi} ~\\Gamma (\\frac{n}{2}) (1 + \\frac{T^2}{n})^{\\frac{n+1}{2}}}$`}</Latex></p>
                             <p>Наблюдаемое значение критерия раcсчитывается по формуле:</p>
-                            <p><Latex>{`$T_{obs} = \\frac{\\overline X_B - Y_B}{\\sqrt{(n_{x-1}) S_x^2 + (n_{y-1}) S_y^2}} \\times \\frac{n_x n_y (n_x + n_y - 2)}{n_x + n_y}$`}</Latex></p>
+                            <p><Latex>{`$T_{obs} = \\frac{\\overline X_B - \\overline Y_B}{\\sqrt{(n_{x-1}) S_x^2 + (n_{y-1}) S_y^2}} \\times \\frac{n_x n_y (n_x + n_y - 2)}{n_x + n_y}$`}</Latex></p>
                             <p>Критическая точка определяется в приложении №5.</p>
                             <p><Latex>{`$H_1': \\omega \\in (T_{crit}; ~+\\infty)$`}</Latex></p>
                             <p><Latex>{`$H_1'': \\omega \\in (-\\infty; ~T_{crit})$`}</Latex></p>
