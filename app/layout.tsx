@@ -8,8 +8,8 @@ import "./styles/4x3 - 16x9.css";
 import "./styles/16x9.css";
 
 export const metadata: Metadata = {
-    title: "Математика",
-    description: "Тут математика",
+    title: "Math",
+    description: "Mafs and latex math app",
 };
 
 export const viewport: Viewport = {
