@@ -76,7 +76,7 @@ useEffect(() => {
                                 <tbody>
                                     <tr>
                                         <td>12 писем <Latex>{`$\\to$`}</Latex></td>
-                                        <td>7 иногородних,</td>
+                                        <td>7 иногородних</td>
                                         <td>5 городских</td>
                                     </tr>
                                     <tr>
@@ -86,7 +86,7 @@ useEffect(() => {
                                     </tr>
                                     <tr>
                                         <td>4 письма <Latex>{`$\\to$`}</Latex></td>
-                                        <td>3 иногородних,</td>
+                                        <td>3 иногородних</td>
                                         <td>1 городское</td>
                                     </tr>
                                 </tbody>
@@ -97,7 +97,7 @@ useEffect(() => {
                                 <tbody>
                                     <tr>
                                         <td>12 писем <Latex>{`$\\to$`}</Latex></td>
-                                        <td>7 иногородних,</td>
+                                        <td>7 иногородних</td>
                                         <td>5 городских</td>
                                     </tr>
                                     <tr>
@@ -107,7 +107,7 @@ useEffect(() => {
                                     </tr>
                                     <tr>
                                         <td>4 письма <Latex>{`$\\to$`}</Latex></td>
-                                        <td>0 иногородних,</td>
+                                        <td>0 иногородних</td>
                                         <td>4 городских</td>
                                     </tr>
                                 </tbody>
