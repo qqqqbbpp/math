@@ -200,13 +200,16 @@ export default function Home() {
                                     </li>
                                     <li><a aria-label="Предельные теоремы теории вероятностей" href="https://qqqqbbpp.github.io/math/probabilities#10">Предельные теоремы теории вероятностей</a>
                                         <ol className="lower-latin">
-                                            <li><a aria-label="Классификация" href="https://qqqqbbpp.github.io/math/probabilities#10a">Классификация</a></li>
-                                            <li><a aria-label="Неравенство Маркова" href="https://qqqqbbpp.github.io/math/probabilities#10b">Неравенство Маркова</a></li>
-                                            <li><a aria-label="Неравенство Чебышева" href="https://qqqqbbpp.github.io/math/probabilities#10c">Неравенство Чебышева</a></li>
-                                            <li><a aria-label="Теорема Чебышева" href="https://qqqqbbpp.github.io/math/probabilities#10d">Теорема Чебышева</a></li>
-                                            <li><a aria-label="Теорема Бернулли" href="https://qqqqbbpp.github.io/math/probabilities#10e">Теорема Бернулли</a></li>
-                                            <li><a aria-label="Теорема Пуассона" href="https://qqqqbbpp.github.io/math/probabilities#10f">Теорема Пуассона</a></li>
-                                            <li><a aria-label="Центральная теорема" href="https://qqqqbbpp.github.io/math/probabilities#10g">Центральная теорема</a></li>
+                                            <li><a aria-label="Закон больших чисел" href="https://qqqqbbpp.github.io/math/probabilities#10a">Закон больших чисел</a>
+                                                <ol>
+                                                    <li><a aria-label="Неравенство Маркова" href="https://qqqqbbpp.github.io/math/probabilities#10a1">Неравенство Маркова</a></li>
+                                                    <li><a aria-label="Неравенство Чебышева" href="https://qqqqbbpp.github.io/math/probabilities#10a2">Неравенство Чебышева</a></li>
+                                                    <li><a aria-label="Теорема Чебышева" href="https://qqqqbbpp.github.io/math/probabilities#10a3">Теорема Чебышева</a></li>
+                                                    <li><a aria-label="Теорема Бернулли" href="https://qqqqbbpp.github.io/math/probabilities#10a4">Теорема Бернулли</a></li>
+                                                    <li><a aria-label="Теорема Пуассона" href="https://qqqqbbpp.github.io/math/probabilities#10a5">Теорема Пуассона</a></li>
+                                                </ol>
+                                            </li>
+                                            <li><a aria-label="Центральная теорема" href="https://qqqqbbpp.github.io/math/probabilities#10b">Центральная предельная теорема</a></li>
                                         </ol>
                                     </li>
                                 </ol>
