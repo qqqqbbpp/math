@@ -10,8 +10,4 @@
     p, a, details, li::marker, table, button {
         font-size: var(--regular-16x9-font);
     }
-
-    foreignObject, text {
-        font-size: var(--small-16x9-font);
-    }
 }

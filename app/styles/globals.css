@@ -3,15 +3,12 @@
 :root {
     --large-9x16-font: calc(1rem + 9/16 * 1svh + 1svw);
     --regular-9x16-font: calc(1rem + 9/16 * 0.5svh + 0.5svw);
-    --small-9x16-font: calc(1rem + 9/16 * 0.25svh + 0.25svw);
 
     --large-4x3-font: calc(1rem + 4/3 * 1svh + 1svw);
     --regular-4x3-font: calc(1rem + 4/3 * 0.5svh + 0.5svw);
-    --small-4x3-font: calc(1rem + 4/3 * 0.25svh + 0.25svw);
     
     --large-16x9-font: calc(1rem + 16/9 * 1svh + 1svw);
     --regular-16x9-font: calc(1rem + 16/9 * 0.5svh + 0.5svw);
-    --small-16x9-font: calc(1rem + 16/9 * 0.25svh + 0.25svw);
 
     --blue: #0089ff;
     --purple: #b40eb4;

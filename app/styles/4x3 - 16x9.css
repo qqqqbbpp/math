@@ -10,8 +10,4 @@
     p, a, details, li, table {
         font-size: var(--regular-4x3-font);
     }
-
-    foreignObject, text {
-        font-size: var(--small-4x3-font);
-    }
 }
