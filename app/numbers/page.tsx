@@ -74,9 +74,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                             </Text>
                                         ))}
                                     </Mafs>
-                                    <div className="button">
-                                        <button onClick={handlePositiveClick}><Latex>{`$+1$`}</Latex></button>
-                                    </div>
+                                    <div className="button"><button aria-label="Прибавить 1" onClick={handlePositiveClick}><Latex>{`$+1$`}</Latex></button></div>
                                     <h5 id="1a1a2">Целые отрицательные</h5>
                                         <p>Мы&nbsp;можем получить весь ряд целых отрицательных чисел и&nbsp;ноль путём бесконечного отнимания единиц.</p>
                                         <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-10,0], y:[0,1]}}>
@@ -90,7 +88,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                                 </Text>
                                             ))}
                                         </Mafs>
-                                        <div className="button"><button onClick={handleNegativeClick}><Latex>{`$-1$`}</Latex></button></div>
+                                        <div className="button"><button aria-label="Вычесть 1" onClick={handleNegativeClick}><Latex>{`$-1$`}</Latex></button></div>
                                     <h5 id="1a1a3">Ноль</h5>
                                         <p>Ноль не&nbsp;является ни&nbsp;положительным, ни&nbsp;отрицательным числом.</p>
                                 <h4 id="1a1b">Дробные</h4>
@@ -109,11 +107,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                             ))}
                                             <Text x={10} y={-0.25}>1</Text>
                                         </Mafs>
-                                        <div className="button">
-                                            <button onClick={handlePositiveDivideClick} disabled={divider >= 9}>
-                                                <Latex>{`$:\\frac{10}{${divider + 1}}$`}</Latex>
-                                            </button>
-                                        </div>
+                                        <div className="button"><button aria-label="Поделить 1 на 10 деленное на n" onClick={handlePositiveDivideClick} disabled={divider >= 9}><Latex>{`$:\\frac{10}{${divider + 1}}$`}</Latex></button></div>
                                     <h5 id="1a1b2">Дробные отрицательные</h5>
                                         <p>Мы&nbsp;можем получить последовательность дробных отрицательных чисел, начиная с&nbsp;деления единицы на&nbsp;<Latex>{`$-\\frac{10}{n},$`}</Latex> после чего продолжая делить каждое получившееся значение. Те&nbsp;же действия можно повторить для любого числа из&nbsp;множества целых положительных чисел.</p>
                                         <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-10,0], y:[0,1]}}>
@@ -128,11 +122,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                             ))}
                                             <Text x={-10} y={-0.25}>-1</Text>
                                         </Mafs>
-                                        <div className="button">
-                                            <button onClick={handleNegativeDivideClick} disabled={negativeDivider >= 9}>
-                                                <Latex>{`$ : -\\frac{10}{${negativeDivider + 1}}$`}</Latex>
-                                            </button>
-                                        </div>
+                                        <div className="button"><button aria-label="Поделить 1 на минус 10 деленное на n" onClick={handleNegativeDivideClick} disabled={negativeDivider >= 9}><Latex>{`$ : -\\frac{10}{${negativeDivider + 1}}$`}</Latex></button></div>
                             <h3 id="1a2">Иррациональные</h3>
                                 <p>Иррациональные числа&nbsp;&mdash; это числа, которые не&nbsp;могут быть представлены в&nbsp;виде дроби, их&nbsp;десятичное представление бесконечно и&nbsp;непериодично.</p>
                 </div>

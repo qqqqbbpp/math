@@ -7,7 +7,11 @@
         font-size: var(--large-9x16-font);
     }
     
-    p, a, details, li, table {
+    p, a, details, li::marker, button, table {
         font-size: var(--regular-9x16-font);
+    }
+
+    foreignObject, text {
+        font-size: var(--small-9x16-font);
     }
 } 
