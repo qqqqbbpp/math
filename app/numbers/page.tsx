@@ -62,7 +62,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                 <h4 id="1a1a">Целые</h4>
                                     <p>Целые числа включают в&nbsp;себя положительные и&nbsp;отрицательные целые числа, а&nbsp;также ноль.</p>
                                     <h5 id="1a1a1">Целые положительные</h5>
-                                    <p>Мы&nbsp;можем получить весь ряд целых положительных чисел путём бесконеного складывания единиц.</p>
+                                    <p>Мы&nbsp;можем получить весь ряд целых положительных чисел путём бесконечного складывания единиц.</p>
                                     <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,10], y:[0,1]}}>
                                         <Coordinates.Cartesian
                                             xAxis={{ labels: false }}
