@@ -151,12 +151,7 @@ button {
     padding: 0.5svh 0.25svw 0.5svh 0.25svw;
 }
 
-button:hover {
-    background-color: #000;
-    color: #fff;	
-}
-
-button:focus {
+button:hover, button:focus {
     background-color: #000;
     color: #fff;	
 }
