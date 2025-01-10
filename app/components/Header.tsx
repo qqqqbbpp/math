@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export default function Header() {
     return (
         <header>
-            <a className="logo-link" aria-label="Оглавление" href="https://qqqqbbpp.github.io/math">
+            <Link className="logo-link" aria-label="Оглавление" href="https://qqqqbbpp.github.io/math">
                 <svg className="logo-0" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" fill="#fff" opacity={0} viewBox="0 0 30 30">						<polyline points="7.5,5.0000005 2.5,5.0000005 2.5,2.5 7.5,2.5000005 " />
                     <path d="M15.2189999,2.5H17.5v5h-2.2810001" />
                     <path d="M22.5,7.5v-5H25v5" />
@@ -30,7 +32,7 @@ export default function Header() {
                             C16.1687508,23.0971069,15.8804522,23.0090656,15.5230055,23.0090656z"/>
                     <polyline points="27.5,22.5 27.5,25 27.5,25 25.25,25 25.25,27.5 24.75,27.5 24.75,25 22.5,25 22.5,22.5 " />
                 </svg>
-            </a>
+            </Link>
         </header>
     );
 }

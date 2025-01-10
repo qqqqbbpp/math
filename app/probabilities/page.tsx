@@ -3,7 +3,7 @@ import Header from "@/app/components/Header";
 import { useEffect } from "react";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
-import { Mafs, Coordinates, Polyline, Line, Plot, LaTeX, Polygon } from "mafs"
+import { Mafs, Coordinates, Line, Plot, LaTeX } from "mafs"
 import Footer from "@/app/components/Footer";
 
 export default function Probabilities() {
@@ -193,7 +193,7 @@ useEffect(() => {
                         <p><Latex>{`$P(A)=p=const, ~P(\\overline A)=1-p=q=const$`}</Latex></p>
                         <p><Latex>{`$P_{m,n}(A) - ? ~(m\\leq n)$`}</Latex></p>
                         <p>При этом важно, что не требуется определенная последовательность появления события <Latex>{`$A.$`}</Latex></p>
-                        <p><Latex>{`$\\underbrace{A,A,A}_m, \\ldots, \\underbrace{\\overline A, \\overline A, \\overline A}_{(n-m)} = p^m \\times q^{m-n}$`}</Latex></p>
+                        <p><Latex>{`$\\underbrace{A,A,A}_m, \\ldots, \\underbrace{\\overline A, \\overline A, \\overline A}_{n-m} = p^m \\times q^{n-m}$`}</Latex></p>
                         <h3 id="4a">Формула Бернулли</h3>
                             <p>Число различных комбинаций, в которых событий <Latex>{`$A$`}</Latex> наступает <Latex>{`$m$`}</Latex> раз из <Latex>{`$n$`}</Latex> возможных определяется формулой сочетания комбинаторики (формула Бернулли).</p>
                             <p><Latex>{`$P_{m,n}(A)=C_n^m\\times p^m \\times q^{n-m}$`}</Latex></p>
@@ -270,13 +270,20 @@ useEffect(() => {
                                     xAxis={{ labels: false }}
                                     yAxis={{ labels: false }}
                                 />
+                                <Line.Segment
+                                    point1={[1, 1]}
+                                    point2={[2, 3]}
+                                />
+                                <Line.Segment
+                                    point1={[2, 3]}
+                                    point2={[6, 2]}
+                                />
                                 <LaTeX at={[1, -0.25]} tex={String.raw`x_1`}/>
                                 <LaTeX at={[2, -0.25]} tex={String.raw`x_2`}/>
                                 <LaTeX at={[6, -0.25]} tex={String.raw`x_n`}/>
                                 <LaTeX at={[0.25, 1]} tex={String.raw`P_1`}/>
                                 <LaTeX at={[0.25, 2]} tex={String.raw`P_2`}/>
                                 <LaTeX at={[0.25, 3]} tex={String.raw`P_n`}/>
-                                <Polyline points={[[1, 1], [2, 3], [6, 2]]}/>
                             </Mafs>
                         <h3 id="5c">Операции над случайными величинами</h3>
                                 <p>Случайные величины <Latex>{`$X, Y$`}</Latex>&nbsp;&mdash; называются независимыми, если закон распределения одной не зависит от того, какие возможные значения принимает другая величина. Иначе они называются зависимыми.</p>
@@ -565,22 +572,19 @@ useEffect(() => {
                                         <p>Геометрически интерпретация этой формулы вытекает из геометрического смысла определенного интеграла.</p>
                                         <p>Вероятность попадания случайной величины <Latex>{`$(\\alpha; \\beta)$`}</Latex>&nbsp;&mdash; численно равна площади формулы, ограниченной кривой распределения, осью <Latex>{`$ox$`}</Latex> и прямыми <Latex>{`$x=\\alpha, ~x=\\beta.$`}</Latex></p>
                                         <p><Latex>{`$P(2<X<4)=\\int\\limits_2^4 f(x)dx = \\int\\limits_2^4 \\frac{x}{18}dx = \\frac{1}{18} \\int\\limits_2^4 xdx = \\frac{x^2}{36} |_2^4 = \\frac{16}{36} - \\frac{4}{36} = \\frac{1}{3}$`}</Latex></p>
-                                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,6], y:[0,3]}}>
+                                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,6], y:[0,1]}}>
                                             <Coordinates.Cartesian/>
-                                            <Plot.OfX y={(x) => (1 / 3) * x}/>
-                                            <Polygon
-                                                points={[
-                                                    [2, 0],
-                                                    [2, (1 / 3) * 2],
-                                                    [4, (1 / 3) * 4],
-                                                    [4, 0]
-                                                ]}
+                                            <Plot.OfX y={(x) => (1 / 6) * x}/>
+                                            <Plot.Inequality
+                                                y={{'<=': (x) => {return x >= 2 && x <= 4 ? (1 / 6) * x : 0},
+                                                '>=': () => 0}}
+                                                minSamplingDepth={13}
                                             />
                                         </Mafs>
                                     </li>
                                     <li><p><Latex>{`$\\int\\limits_{-\\infty}^\\infty f(x)dx=1$`}</Latex></p></li>
                                 </ol>
-                                <p>Выражение интегральной функции через дифференциальную <Latex>{`$f(x), F(x)$`}</Latex>&nbsp;&mdash; взаимно определены, то есть знаю одну можно выразить другую</p>
+                                <p>Выражение интегральной функции через дифференциальную <Latex>{`$f(x), F(x)$`}</Latex>&nbsp;&mdash; взаимно определены, то есть знаю одну можно выразить другую.</p>
                                 <p><Latex>{`$F(x)=P(X<x)=P(-\\infty < X < x)=\\int\\limits_{-\\infty}^x f(x)dx$`}</Latex></p>
                         <h3 id="8">Числовые характеристики случайной величины</h3>
                             <p>Для решения многих практических задач совсем не обязательно знать все возможные значения случайной величины и соответствующие вероятности. Достаточно указать отдельные числовые характеристики, отражающие важные черты закона распределения.</p>
@@ -651,13 +655,9 @@ useEffect(() => {
                                     xAxis={{ labels: false }}
                                     yAxis={{ labels: false }}
                                 />
-                                <Polygon
-                                    points={[
-                                        [2, 0],
-                                        [2, 3],
-                                        [3, 3],
-                                        [3, 0]
-                                    ]}
+                                <Plot.Inequality
+                                    y={{'<=': (x) => {return x >= 2 && x <= 3 ? 3 : 0},
+                                    '>=': () => 0}}
                                 />
                                 <LaTeX at={[2, -0.25]} tex={String.raw`\alpha`}/>
                                 <LaTeX at={[3, -0.25]} tex={String.raw`\beta`}/>
