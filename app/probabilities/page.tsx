@@ -663,6 +663,7 @@ useEffect(() => {
                                 <LaTeX at={[3, -0.25]} tex={String.raw`\beta`}/>
                                 <LaTeX at={[1, -0.25]} tex={String.raw`a`}/>
                                 <LaTeX at={[4, -0.25]} tex={String.raw`b`}/>
+                                <LaTeX at={[-0.25, 3]} tex={String.raw`\frac{1}{b-a}`}/>
                                 <Line.Segment style="dashed"
                                     point1={[1, 0]}
                                     point2={[1, 3]}
@@ -675,7 +676,6 @@ useEffect(() => {
                                     point1={[0, 3]}
                                     point2={[4, 3]}
                                 />
-                                <LaTeX at={[-0.25, 3]} tex={String.raw`\frac{1}{b-a}`}/>
                             </Mafs>
                             <p><Latex>{`$
                             F(x)=\\begin{cases}
@@ -684,6 +684,30 @@ useEffect(() => {
                                 1; &x>b
                             \\end{cases}
                             $`}</Latex></p>
+                            <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,6], y:[0,1]}}>
+                                <Coordinates.Cartesian
+                                    xAxis={{ labels: false }}
+                                    yAxis={{ labels: false }}
+                                />
+                                <Plot.OfX
+                                    y={(x) => {
+                                        if (x < 1) return 0;
+                                        else if (x >= 1 && x <= 6) return (x - 1) / (6 - 1);
+                                        else return 1;
+                                    }}
+                                />
+                                <LaTeX at={[1, -0.25]} tex={String.raw`a`}/>
+                                <LaTeX at={[6, -0.25]} tex={String.raw`b`}/>
+                                <LaTeX at={[-0.25, 1]} tex={String.raw`1`}/>
+                                <Line.Segment style="dashed"
+                                    point1={[6, 1]}
+                                    point2={[0, 1]}
+                                />
+                                <Line.Segment style="dashed"
+                                    point1={[6, 1]}
+                                    point2={[6, 0]}
+                                />
+                            </Mafs>
                             <p><Latex>{`$M(X)=\\frac{b+a}{2}$`}</Latex></p>
                             <p><Latex>{`$D(X)=\\frac{(b-a)^2}{12}$`}</Latex></p>
                             <p><Latex>{`$\\sigma(X) = \\frac{b-a}{2\\sqrt{3}}$`}</Latex></p>
