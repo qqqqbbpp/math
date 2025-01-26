@@ -406,7 +406,6 @@ export default function Probabilities() {
                             <Latex>{`$$\\sum\\limits_{i=1}^n P_i = 1$$`}</Latex>
                             <Latex>{`$$M(X)=\\sum\\limits_{i=1}^n x_i P_i = 1$$`}</Latex>
                             <Latex>{`$$M(X)=\\int\\limits_{-\\infty}^{\\infty} xf(x)dx$$`}</Latex>
-                            <Latex>{`$$M(X)=\\int\\limits_0^6 x\\cdot\\frac{x}{18}\\cdot dx = \\frac{1}{18}\\cdot\\frac{x^3}{3} \\Bigg\\vert_0^6 = \\frac{1}{54}\\cdot(6^3 - 0)=\\frac{36\\cdot 6}{54}=4$$`}</Latex>
                             <Latex>{`$$M(X\\pm Y)=M(X)\\pm M(Y)$$`}</Latex>
                             <Latex>{`$$M(X \\cdot Y)= M(X) \\cdot M(Y)$$`}</Latex>
                             <Latex>{`$$M(const)=const$$`}</Latex>
