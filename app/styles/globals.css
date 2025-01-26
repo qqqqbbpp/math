@@ -32,7 +32,6 @@
 }
 
 html {
-    scroll-padding-top: 10svh;
     background-color: #000;
     overflow-x: hidden;
     scrollbar-width: thin;
