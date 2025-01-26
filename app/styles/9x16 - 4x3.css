@@ -1,17 +1,17 @@
 @media (min-aspect-ratio: 9/16) and (max-aspect-ratio: 4/3) {
     .main {
-        margin: 0 5svw 0 5svw;
+        margin: 0 5svw 1svh 5svw;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: var(--large-9x16-font);
+        font-size: var(--large-9x16);
     }
         
-    p, a, details, li::marker, button, table {
-        font-size: var(--regular-9x16-font);
+    p, .katex-display, summary, li::marker, button, a, table {
+        font-size: var(--medium-9x16);
     }
 
     foreignObject, text {
-        font-size: var(--small-9x16-font);
+        font-size: var(--small-9x16);
     }
 }

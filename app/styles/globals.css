@@ -1,26 +1,27 @@
 @import "mafs/core.css";
 
 :root {
-    --large-9x16-font: calc(1rem + 9/16 * 1svh + 1svw);
-    --regular-9x16-font: calc(1rem + 9/16 * 0.5svh + 0.5svw);
-    --small-9x16-font: calc(1rem + 9/16 * 0.25svh + 0.25svw);
+    --large-9x16: calc(1rem + 9/16 * 1svh + 1svw);
+    --medium-9x16: calc(1rem + 9/16 * 0.5svh + 0.5svw);
+    --small-9x16: calc(1rem + 9/16 * 0.25svh + 0.25svw);
 
-    --large-4x3-font: calc(1rem + 4/3 * 1svh + 1svw);
-    --regular-4x3-font: calc(1rem + 4/3 * 0.5svh + 0.5svw);
-    --small-4x3-font: calc(1rem + 4/3 * 0.25svh + 0.25svw);
+    --large-4x3: calc(1rem + 4/3 * 1svh + 1svw);
+    --medium-4x3: calc(1rem + 4/3 * 0.5svh + 0.5svw);
+    --small-4x3: calc(1rem + 4/3 * 0.25svh + 0.25svw);
     
-    --large-16x9-font: calc(1rem + 16/9 * 1svh + 1svw);
-    --regular-16x9-font: calc(1rem + 16/9 * 0.5svh + 0.5svw);
-    --small-16x9-font: calc(1rem + 16/9 * 0.25svh + 0.25svw);
+    --large-16x9: calc(1rem + 16/9 * 1svh + 1svw);
+    --medium-16x9: calc(1rem + 16/9 * 0.5svh + 0.5svw);
+    --small-16x9: calc(1rem + 16/9 * 0.25svh + 0.25svw);
 
-    --blue: #0089ff;
-    --purple: #b40eb4;
+    --blue: #3399ff;
+    --purple: #cc00cc;
 }
 
 * {
-    border: 0;
     margin: 0;
+    border: 0;
     padding: 0;
+	box-sizing: border-box;
     text-rendering: optimizeLegibility;
     shape-rendering: geometricPrecision;
 }
@@ -31,9 +32,16 @@
 }
 
 html {
-    overflow: hidden;
     scroll-padding-top: 10svh;
-    font: 10px var(--pt-serif);
+    background-color: #000;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: var(--pt-serif);
 }
 
 header {
@@ -66,18 +74,8 @@ header {
 }
 
 main {
-    height: 0;
-    min-height: 80svh;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-    scrollbar-color:#000 #fff;
     background-color: #fff;
-    color: #000;
-}
-
-main:focus {
-    outline: none;
+    min-height: 80svh;
 }
 
 .table-of-contents {
@@ -93,12 +91,8 @@ summary:hover {
     text-decoration: underline;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li:not(ul > li) {
-    margin: 0 0 0 5svw;
+ol, ul {
+    padding: 0 0 0 5svw;
 }
 
 .lower-latin {
@@ -106,8 +100,8 @@ li:not(ul > li) {
 }
 
 a {
-    text-decoration: none;
     color: var(--blue);
+    text-decoration: none;
 }
 
 a:hover {
@@ -119,18 +113,53 @@ a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
     font-style: italic;
+    font-weight: 400;
 }
 
-p {
-    margin: 0 0 2.5svh 0;
+p, .MafsView, table {
+    margin: 0 0 2.5svh;
+}
+
+.katex-display{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+  
+.katex-display::-webkit-scrollbar {
+    height: 1svh;
+}
+  
+.katex-display::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.katex-display::-webkit-scrollbar-thumb{
+    border-radius: 10rem;
+    background-color:#666;
+}
+
+.katex-display::-webkit-scrollbar-thumb:hover {
+    background-color:#000;
+}
+
+.vlist-s {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+table, td {
+    width: 100%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
 }
 
 .MafsView {
     cursor: grab;
-    margin: 0 0 2.5svh 0;
-    outline-color: #000!important;
+    outline-color: #000 !important;
     outline-offset: 0.25svh;
 }
 
@@ -160,16 +189,6 @@ button:disabled {
     background-color: #fff;
     color: #000;
     cursor: default;
-} 
-
-table, td {
-    width: 100%;
-    table-layout: fixed;
-    overflow-wrap: break-word;
-    border: 1px solid #000;
-    border-collapse: collapse;
-    text-align: center;
-    margin: 0 0 2.5svh 0;
 }
 
 footer {

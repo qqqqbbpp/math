@@ -1,17 +1,11 @@
 "use client"
 import Header from "@/app/components/Header";
-import { useEffect } from "react";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import { Mafs, Coordinates, Line, useMovablePoint, Plot, Transform} from "mafs"
 import Footer from "@/app/components/Footer";
 
 export default function Functions() {
-
-useEffect(() => {
-    const element = document.querySelector('main');
-    element?.focus();
-}, []);
 
 const blue = "#0089ff"
 
@@ -28,10 +22,10 @@ const fn = (x: number) => (x - quadraticFunctionPointA.x) * (x - quadraticFuncti
     return (
         <>
             <Header/>
-            <main tabIndex={1}>
+            <main>
                 <div className="main">
                     <h1 id="1">Линейные</h1>
-                    <p>Линейные функции&nbsp;&mdash; это функции вида <Latex>{`$y = kx + b$`}</Latex>.</p>
+                        <p>Линейные функции&nbsp;&mdash; это функции вида <Latex>{`$y = kx + b$`}</Latex>.</p>
                         <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-3,3], y:[-1,1]}}>
                             <Coordinates.Cartesian/>
                             <Line.ThroughPoints
@@ -42,7 +36,7 @@ const fn = (x: number) => (x - quadraticFunctionPointA.x) * (x - quadraticFuncti
                             {linearFunctionPointK.element}
                         </Mafs>
                     <h2 id="2">Квадратные</h2>
-                    <p>Квадратные функции&nbsp;&mdash; это функции вида <Latex>{`$y = ax^2 + bx + c$`}</Latex>. </p>
+                        <p>Квадратные функции&nbsp;&mdash; это функции вида <Latex>{`$y = ax^2 + bx + c$`}</Latex>. </p>
                         <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-3,3], y:[-1,1]}}>
                             <Coordinates.Cartesian/>
                             <Plot.OfX y={(x) => (quadraticFunctionPointK.y * fn(x)) / fn(mid)}/>

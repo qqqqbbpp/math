@@ -1,17 +1,12 @@
 "use client"
 import Header from "@/app/components/Header";
 import { Mafs, Coordinates, Vector, MovablePoint, Text} from "mafs"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import Footer from "@/app/components/Footer";
 
 export default function Numbers() {
-
-useEffect(() => {
-    const element = document.querySelector('main');
-    element?.focus();
-}, []);
 
 const [position, setPosition] = useState([1, 2])
 const realPart = (position[0])
@@ -30,7 +25,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
     return (
         <>
             <Header/>
-            <main tabIndex={1}>
+            <main>
                 <div className="main">
                     <h1 id="1">Комплексные</h1>
                         <p>Комплексные числа&nbsp;&mdash; это числа вида <Latex>{`$ z = a + bi$`}</Latex>, где <Latex>{`$a$`}</Latex>&nbsp;и&nbsp;<Latex>{`$b$`}</Latex>&nbsp;&mdash; вещественные числа, а&nbsp;<Latex>{`$i$`}</Latex>&nbsp;&mdash; мнимая единица, такая что <Latex>{`$i^2 = -1.$`}</Latex></p>
