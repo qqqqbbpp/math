@@ -104,7 +104,7 @@ export default function Statistics() {
                             <h4 id="4c4">Коэффициент вариации</h4>
                                 <p>Коэффициент вариации&nbsp;&mdash; величина, равная отношению среднеквадратичного отклонения случайной величины к ее математическому ожиданию.</p>
                                 <p>Применяется для сравнения вариативности одного и того же признака в нескольких совокупностях с различным средним арифметическим.</p>
-                                <p><Latex>{`$$\\nu=\\frac{\\sigma_B}{\\overline x_B} \\times 100\\%$$`}</Latex></p>
+                                <p><Latex>{`$$\\nu=\\frac{\\sigma_B}{\\overline x_B} \\cdot 100\\%$$`}</Latex></p>
                                 <p>Если коэффициент вариации {'>'} 33%, выборка считается неоднородной и её следует кластеризовать.</p>
                     <h2 id="5">Статистическое оценивание</h2>
                         <p>Оценивание&nbsp;&mdash; это приближенное оценивание по выборочным данным параметров генеральной совокупности.</p>
@@ -128,7 +128,7 @@ export default function Statistics() {
                         </ol>
                         <Latex>{`$$X_{gen}(M(X)) \\to \\overline{X_B}$$`}</Latex>
                         <Latex>{`$$D_{gen}(D(X)) \\to S^2$$`}</Latex>
-                        <Latex>{`$$S^2 = D_B \\times \\frac{n}{n-1}$$`}</Latex>
+                        <Latex>{`$$S^2 = D_B \\cdot \\frac{n}{n-1}$$`}</Latex>
                         <Latex>{`$$\\sigma_{gen}(\\sigma(x)) \\to S, ~S = \\sqrt{S^2}$$`}</Latex>
                         <p>На основе точечных оценок происходит построение интервальных оценок. Интервальной оценкой неизвестного параметра <Latex>{`$\\theta$`}</Latex> называют доверительный интервал <Latex>{`$(\\theta^{mb}, ~\\theta^{np})$`}</Latex>, который с заданной вероятностью <Latex>{`$\\gamma$`}</Latex> покрывает неизвестный параметр.</p>
                         <Latex>{`$$P(\\theta^{mb}<\\theta<\\theta^{np}) = \\gamma$$`}</Latex>
@@ -143,7 +143,7 @@ export default function Statistics() {
                             <Latex>{`$$P(\\overline{X_B} - \\Delta < \\overline X_{gen} < \\overline X_B + \\Delta) = \\gamma$$`}</Latex>
                             <Latex>{`$$\\gamma = 2\\Phi(\\frac{\\Delta \\sqrt n}{\\sigma})$$`}</Latex>
                             <Latex>{`$$\\Phi = \\frac{\\Delta \\sqrt n}{\\sigma} = \\frac{\\gamma}{2}$$`}</Latex>
-                            <Latex>{`$$\\frac{\\Delta \\sqrt n}{\\sigma} = t \\Rightarrow \\Delta = \\frac{t \\times \\sigma}{\\sqrt n}$$`}</Latex>
+                            <Latex>{`$$\\frac{\\Delta \\sqrt n}{\\sigma} = t \\Rightarrow \\Delta = \\frac{t \\cdot \\sigma}{\\sqrt n}$$`}</Latex>
                     <h2 id="6">Проверка статистических гипотез</h2>
                         <p>Статистическая гипотеза&nbsp;&mdash; это некоторое предположение о свойствах и характеристиках генеральной совокупности, сформулированная на основе анализа выборки.</p>
                         <p>При этом выборка должна быть репрезентативной, то есть являться генеральной совокупностью в уменьшенном масштабе (все свойства должны быть сохранены в выборке).</p>
@@ -175,7 +175,7 @@ export default function Statistics() {
                         <h3 id="6b">Проверка гипотезы о нормальном законе распределения генеральной совокупности</h3>
                             <Latex>{`$$H_0: X\\sim N$$`}</Latex>
                             <Latex>{`$$H_1: X\\sim M$$`}</Latex>
-                            <Latex>{`$$f(\\chi^2) = \\frac{1}{2^{\\frac{k}{2}} \\Gamma (\\frac{k}{2})} \\times {\\chi^2}^{\\frac{k}{2} - 1} \\times e^{-\\frac{\\chi^2}{2}}$$`}</Latex>
+                            <Latex>{`$$f(\\chi^2) = \\frac{1}{2^{\\frac{k}{2}} \\Gamma (\\frac{k}{2})} \\cdot {\\chi^2}^{\\frac{k}{2} - 1} \\cdot e^{-\\frac{\\chi^2}{2}}$$`}</Latex>
                             <p>Где <Latex>{`$k = S - 3$`}</Latex>&nbsp;&mdash; число степеней свободы, <Latex>{`$S$`}</Latex>&nbsp;&mdash; число вариационных групп статистического распределения выборки.</p>
                             <p>В данном случаем применяется правосторонняя критическая область <Latex>{`$\\chi^2_{crit} (\\alpha; k).$`}</Latex> Рассчитывается приближенное значение критерия.</p>
                             <Latex>{`$$\\chi^2 = \\sum\\limits_{i=1}^S \\frac{(m_i^\\epsilon - m_i^T)^2}{m_i^T}$$`}</Latex>
@@ -192,7 +192,7 @@ export default function Statistics() {
                             <p><Latex>{`$H_1: D(x) > D(y)$`}</Latex>&nbsp;&mdash; <Latex>{`$X, ~Y$`}</Latex> нельзя сравнивать.</p>
                             <p>Задают уровень значимости <Latex>{`$\\alpha = P_{H_0} (H_1).$`}</Latex> В данном случае в качестве инструмента проверки используется случайная величина <Latex>{`$F$`}</Latex>, имеющая распределения Фишера-Снедекора с параметрами <Latex>{`$k_1, k_2.$`}</Latex> Где <Latex>{`$n_1$`}</Latex>&nbsp;&mdash; объём выборки с большей дисперсией, <Latex>{`$n_2$`}</Latex>&nbsp;&mdash; с меньшей.</p>
                             <Latex>{`$$k_1 = n_1 - 1, ~k_2 = n_2 - 1$$`}</Latex>
-                            <Latex>{`$$f(F) = \\frac{k_1^{\\frac{k_1}{2}} k_2^{\\frac{k_2}{2}} \\Gamma(\\frac{k_1 + k_2}{2})}{\\Gamma(\\frac{k_1}{2}) \\Gamma(\\frac{k_2}{2})} \\times F^{\\frac{k_1}{2}-1} \\times (F k_1 + k_2)^{-\\frac{k_1 + k_2}{2}}$$`}</Latex>
+                            <Latex>{`$$f(F) = \\frac{k_1^{\\frac{k_1}{2}} k_2^{\\frac{k_2}{2}} \\Gamma(\\frac{k_1 + k_2}{2})}{\\Gamma(\\frac{k_1}{2}) \\Gamma(\\frac{k_2}{2})} \\cdot F^{\\frac{k_1}{2}-1} \\cdot (F k_1 + k_2)^{-\\frac{k_1 + k_2}{2}}$$`}</Latex>
                             <p>Рассчитывается наблюдаемое значение критерия.</p>
                             <Latex>{`$$F_{obs}=\\frac{S^2_{greater}}{S^2_{less}} \\geq 1$$`}</Latex>
                             <p>В данном случае критическая область является правосторонней.</p>
@@ -211,7 +211,7 @@ export default function Statistics() {
                             <Latex>{`$$k = n_x + n_y - 2$$`}</Latex>
                             <Latex>{`$$f(T) = \\frac{\\Gamma (\\frac{n+1}{2})}{\\sqrt{n \\pi} ~\\Gamma (\\frac{n}{2}) (1 + \\frac{T^2}{n})^{\\frac{n+1}{2}}}$$`}</Latex>
                             <p>Рассчитывается наблюдаемое значение критерия.</p>
-                            <Latex>{`$$T_{obs} = \\frac{\\overline X_B - \\overline Y_B}{\\sqrt{(n_{x-1}) S_x^2 + (n_{y-1}) S_y^2}} \\times \\frac{n_x n_y (n_x + n_y - 2)}{n_x + n_y}$$`}</Latex>
+                            <Latex>{`$$T_{obs} = \\frac{\\overline X_B - \\overline Y_B}{\\sqrt{(n_{x-1}) S_x^2 + (n_{y-1}) S_y^2}} \\cdot \\frac{n_x n_y (n_x + n_y - 2)}{n_x + n_y}$$`}</Latex>
                             <p>Определяется критическая точка.</p>
                             <Latex>{`$$H_1': \\omega \\in (T_{crit}; ~+\\infty)$$`}</Latex>
                             <Latex>{`$$H_1'': \\omega \\in (-\\infty; ~T_{crit})$$`}</Latex>
