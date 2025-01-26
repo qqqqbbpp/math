@@ -133,7 +133,7 @@ p, .MafsView, table {
     background-color: transparent;
 }
 
-.katex-display::-webkit-scrollbar-thumb{
+.katex-display::-webkit-scrollbar-thumb {
     border-radius: 10rem;
     background-color:#666;
 }

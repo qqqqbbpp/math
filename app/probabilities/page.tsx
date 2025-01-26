@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import Header from "@/app/components/Header";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
