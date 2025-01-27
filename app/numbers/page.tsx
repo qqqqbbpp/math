@@ -9,8 +9,6 @@ import Footer from "@/app/components/Footer";
 export default function Numbers() {
 
 const [position, setPosition] = useState([1, 2])
-const realPart = (position[0])
-const imaginaryPart = (position[1])
 
 const [positiveCount, setPositiveCount] = useState(1);
 const [divider, setDivider] = useState(0);
@@ -30,30 +28,22 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                     <h1 id="1">Комплексные</h1>
                         <p>Комплексные числа&nbsp;&mdash; это числа вида <Latex>{`$ z = a + bi$`}</Latex>, где <Latex>{`$a$`}</Latex>&nbsp;и&nbsp;<Latex>{`$b$`}</Latex>&nbsp;&mdash; вещественные числа, а&nbsp;<Latex>{`$i$`}</Latex>&nbsp;&mdash; мнимая единица, такая что <Latex>{`$i^2 = -1.$`}</Latex></p>
                         <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-3,3], y:[-1,2]}}>
-                            <Coordinates.Cartesian 
-                                yAxis={{
-                                    labels: (y) => {
-                                        // if (y === 1) return "i"
-                                        // if (y === -1) return "-i"
-                                        return `${y}i`}
-                                }}/>
+                            <Coordinates.Cartesian yAxis={{labels: (y) => {return `${y}i`}}}/>
                             <MovablePoint
-                                color="#0089ff"
-                                point={[realPart, imaginaryPart]}
-                                onMove={(newPosition) => setPosition([(newPosition[0]), (newPosition[1])])}
+                                point={[position[0], position[1]]}
                                 constrain={([x, y]) => [Math.round(x), Math.round(y)]}
+                                onMove={(newPosition) => setPosition([(newPosition[0]), (newPosition[1])])}
+                                color="#0089ff"
                             />
-                            <Vector tail={[0, 0]} tip={[realPart, imaginaryPart]}/>
-                            <Text
-                                x={realPart + 0.25}
-                                y={imaginaryPart + 0.25}
-                                attach="e">z = {realPart} {imaginaryPart >= 0 ? "+" : "-"} {Math.abs(imaginaryPart)}i
+                            <Vector tail={[0, 0]} tip={[position[0], position[1]]}/>
+                            <Text x={position[0] + 0.25} y={position[1] + 0.25} attach="e">
+                                z = {position[0]} {position[1] >= 0 ? "+" : "-"} {Math.abs(position[1])}i
                             </Text>
                         </Mafs>
                         <h2 id="1a">Вещественные</h2>
                             <p>Вещественные числа включают в&nbsp;себя два ряда рациональных и&nbsp;иррациональных чисел.</p>
                             <h3 id="1a1">Рациональные</h3>
-                                <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в&nbsp;виде дроби <Latex>{`$\\frac{p}{q},$`}</Latex> где <Latex>{`$p$`}</Latex>&nbsp;и&nbsp;<Latex>{`$q$`}</Latex>&nbsp;&mdash; целые числа, а&nbsp;<Latex>{`$q\\neq$`}</Latex> 0.</p>
+                                <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в виде дроби <Latex>{`$\\frac{p}{q},$`}</Latex> где <Latex>{`$p$`}</Latex> и <Latex>{`$q$`}</Latex>&nbsp;&mdash; целые числа, а <Latex>{`$q\\neq$`}</Latex> 0.</p>
                                 <h4 id="1a1a">Целые</h4>
                                     <p>Целые числа включают в&nbsp;себя положительные и&nbsp;отрицательные целые числа, а&nbsp;также ноль.</p>
                                     <h5 id="1a1a1">Целые положительные</h5>
