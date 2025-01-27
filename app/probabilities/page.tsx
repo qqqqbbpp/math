@@ -385,25 +385,6 @@ export default function Probabilities() {
                         <h3 id="7a">Математическое ожидание <Latex>{`$M(X)$`}</Latex></h3>
                             <p>Возможные задания случайной величины могут быть сосредоточены вокруг некоторого центра&nbsp;&mdash; среднего значения.</p>
                             <p>Математическое ожидание&nbsp;&mdash; это среднее значение случайной величины, взвешенное по вероятности.</p>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><Latex>{`$x_i$`}</Latex></td>
-                                        <td><Latex>{`$x_1$`}</Latex></td>
-                                        <td><Latex>{`$x_2$`}</Latex></td>
-                                        <td><Latex>{`$\\ldots$`}</Latex></td>
-                                        <td><Latex>{`$x_n$`}</Latex></td>
-                                    </tr>
-                                    <tr>
-                                        <td><Latex>{`$P_i$`}</Latex></td>
-                                        <td><Latex>{`$P_1$`}</Latex></td>
-                                        <td><Latex>{`$P_2$`}</Latex></td>
-                                        <td><Latex>{`$\\ldots$`}</Latex></td>
-                                        <td><Latex>{`$P_n$`}</Latex></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <Latex>{`$$\\sum\\limits_{i=1}^n P_i = 1$$`}</Latex>
                             <Latex>{`$$M(X)=\\sum\\limits_{i=1}^n x_i P_i = 1$$`}</Latex>
                             <Latex>{`$$M(X)=\\int\\limits_{-\\infty}^{\\infty} xf(x)dx$$`}</Latex>
                             <Latex>{`$$M(X\\pm Y)=M(X)\\pm M(Y)$$`}</Latex>
