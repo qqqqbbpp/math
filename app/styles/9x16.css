@@ -1,6 +1,10 @@
 @media (max-aspect-ratio: 9/16) {
+    main {
+        padding: 0svh 0 1svh 0;
+    }
+
     .main {
-        margin: 0 2.5svw 1svh 2.5svw;
+        margin: 0 2.5svw 0 2.5svw;
     }
 
     h1, h2, h3, h4, h5, h6 {

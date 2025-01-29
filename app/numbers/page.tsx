@@ -40,15 +40,22 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                 z = {position[0]} {position[1] >= 0 ? "+" : "-"} {Math.abs(position[1])}i
                             </Text>
                         </Mafs>
+                        <p>Для арифметических операций используются следующие формулы:</p>
+                        <Latex>{`$$(a + bi) \\pm (c + di) = (a \\pm c) + (b \\pm d)i$$`}</Latex>
+                        <Latex>{`$$(a + bi) \\cdot (c + di) = (ac - bd) + (bc + ad)i$$`}</Latex>
+                        <Latex>{`$$\\frac{a + bi}{c + di} = \\frac{ac + bd}{c^2 + d^2} + \\frac{bc - ad}{c^2 + d^2}$$`}</Latex>
                         <h2 id="1a">Вещественные</h2>
                             <p>Вещественные числа включают в&nbsp;себя два ряда рациональных и&nbsp;иррациональных чисел.</p>
                             <h3 id="1a1">Рациональные</h3>
-                                <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в виде дроби <Latex>{`$\\frac{p}{q},$`}</Latex> где <Latex>{`$p$`}</Latex> и <Latex>{`$q$`}</Latex>&nbsp;&mdash; целые числа, а <Latex>{`$q\\neq$`}</Latex> 0.</p>
+                                <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в виде дроби <Latex>{`$\\frac{a}{b},$`}</Latex> где <Latex>{`$a$`}</Latex> и <Latex>{`$b$`}</Latex>&nbsp;&mdash; целые числа, а <Latex>{`$b\\neq 0.$`}</Latex> Для арифметических операций используются следующие формулы:</p>
+                                <Latex>{`$$\\frac{a}{b} + \\frac{c}{d} = \\frac{ad \\pm bc}{bd}$$`}</Latex>
+                                <Latex>{`$$\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{ab}{cd}$$`}</Latex>
+                                <Latex>{`$$\\frac{a}{b}:\\frac{c}{d} = \\frac{ad}{bc}$$`}</Latex>
                                 <h4 id="1a1a">Целые</h4>
                                     <p>Целые числа включают в&nbsp;себя положительные и&nbsp;отрицательные целые числа, а&nbsp;также ноль.</p>
                                     <h5 id="1a1a1">Целые положительные</h5>
                                     <p>Мы&nbsp;можем получить весь ряд целых положительных чисел путём бесконечного складывания единиц.</p>
-                                    <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,10], y:[0,1]}}>
+                                    <Mafs preserveAspectRatio={false} height={200} viewBox={{x:[0,10], y:[0,1]}}>
                                         <Coordinates.Cartesian
                                             xAxis={{ labels: false }}
                                             yAxis={{ labels: false }}
@@ -62,7 +69,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                     <div className="button"><button aria-label="Прибавить 1" onClick={handlePositiveClick}><Latex>{`$+1$`}</Latex></button></div>
                                     <h5 id="1a1a2">Целые отрицательные</h5>
                                         <p>Мы&nbsp;можем получить весь ряд целых отрицательных чисел и&nbsp;ноль путём бесконечного отнимания единиц.</p>
-                                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-10,0], y:[0,1]}}>
+                                        <Mafs preserveAspectRatio={false} height={200} viewBox={{x:[-10,0], y:[0,1]}}>
                                             <Coordinates.Cartesian
                                                 xAxis={{ labels: false }}
                                                 yAxis={{ labels: false }}
@@ -80,7 +87,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                     <p>Дробные числа включают в&nbsp;себя все числа, которые могут быть выражены в&nbsp;виде дроби, отличной от&nbsp;целого числа.</p>
                                     <h5 id="1a1b1">Дробные положительные</h5>
                                         <p>Мы&nbsp;можем получить последовательность дробных положительных чисел, начиная с&nbsp;деления единицы на&nbsp;<Latex>{`$\\frac{10}{n},$`}</Latex> после чего продолжая делить каждое получившееся значение. Те&nbsp;же действия можно повторить для любого числа из&nbsp;множества целых положительных чисел.</p>
-                                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,10], y:[0,1]}}>
+                                        <Mafs preserveAspectRatio={false} height={200} viewBox={{x:[0,10], y:[0,1]}}>
                                             <Coordinates.Cartesian
                                                 xAxis={{ labels: false }}
                                                 yAxis={{ labels: false }} 
@@ -95,7 +102,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                                         <div className="button"><button aria-label="Поделить 1 на 10 деленное на n" onClick={handlePositiveDivideClick} disabled={divider >= 9}><Latex>{`$:\\frac{10}{${divider + 1}}$`}</Latex></button></div>
                                     <h5 id="1a1b2">Дробные отрицательные</h5>
                                         <p>Мы&nbsp;можем получить последовательность дробных отрицательных чисел, начиная с&nbsp;деления единицы на&nbsp;<Latex>{`$-\\frac{10}{n},$`}</Latex> после чего продолжая делить каждое получившееся значение. Те&nbsp;же действия можно повторить для любого числа из&nbsp;множества целых положительных чисел.</p>
-                                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-10,0], y:[0,1]}}>
+                                        <Mafs preserveAspectRatio={false} height={200} viewBox={{x:[-10,0], y:[0,1]}}>
                                             <Coordinates.Cartesian
                                                 xAxis={{ labels: false }}
                                                 yAxis={{ labels: false }}
