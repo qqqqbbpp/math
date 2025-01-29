@@ -234,7 +234,7 @@ export default function Statistics() {
             </main>
             <Footer 
                 prevPage="Вероятности" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
-                nextPage="..." nextHref="#" 
+                // nextPage="..." nextHref="#" 
             />
         </>
     )
