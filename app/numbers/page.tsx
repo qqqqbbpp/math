@@ -8,7 +8,7 @@ import Footer from "@/app/components/Footer";
 
 export default function Numbers() {
 
-const [position, setPosition] = useState([1, 2])
+const [position, setPosition] = useState([3, 2])
 
 const [positiveCount, setPositiveCount] = useState(1);
 const [divider, setDivider] = useState(0);
@@ -27,7 +27,7 @@ const handleNegativeDivideClick = () => setNegativeDivider(negativeDivider + 1);
                 <div className="main">
                     <h1 id="1">Комплексные</h1>
                         <p>Комплексные числа&nbsp;&mdash; это числа вида <Latex>{`$ z = a + bi$`}</Latex>, где <Latex>{`$a$`}</Latex>&nbsp;и&nbsp;<Latex>{`$b$`}</Latex>&nbsp;&mdash; вещественные числа, а&nbsp;<Latex>{`$i$`}</Latex>&nbsp;&mdash; мнимая единица, такая что <Latex>{`$i^2 = -1.$`}</Latex></p>
-                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-3,3], y:[-1,2]}}>
+                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-5,5], y:[-1,3]}}>
                             <Coordinates.Cartesian yAxis={{labels: (y) => {return `${y}i`}}}/>
                             <MovablePoint
                                 point={[position[0], position[1]]}

@@ -9,11 +9,11 @@ export default function Functions() {
 
 const blue = "#0089ff"
 
-const linearFunctionPointB = useMovablePoint([0, 1], { constrain: "vertical", color: blue});
-const linearFunctionPointK = useMovablePoint([1, 0], { constrain: "horizontal", color: blue});
+const linearFunctionPointB = useMovablePoint([0, 2], { constrain: "vertical", color: blue});
+const linearFunctionPointK = useMovablePoint([2, 0], { constrain: "horizontal", color: blue});
 
-const quadraticFunctionPointA = useMovablePoint([0, 0], { constrain: "horizontal", color: blue});
-const quadraticFunctionPointB = useMovablePoint([1, 0], { constrain: "horizontal", color: blue});
+const quadraticFunctionPointA = useMovablePoint([1, 0], { constrain: "horizontal", color: blue});
+const quadraticFunctionPointB = useMovablePoint([2, 0], { constrain: "horizontal", color: blue});
 const quadraticFunctionPointK = useMovablePoint([0, -1], { constrain: "vertical", color: blue});
 
 const mid = (quadraticFunctionPointA.x + quadraticFunctionPointB.x) / 2
@@ -26,7 +26,7 @@ const fn = (x: number) => (x - quadraticFunctionPointA.x) * (x - quadraticFuncti
                 <div className="main">
                     <h1 id="1">Линейные</h1>
                         <p>Линейные функции&nbsp;&mdash; это функции вида <Latex>{`$y = kx + b$`}</Latex>.</p>
-                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-3,3], y:[-1,1]}}>
+                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-5,5], y:[-1,3]}}>
                             <Coordinates.Cartesian/>
                             <Line.ThroughPoints
                                 point1={linearFunctionPointB.point}
@@ -37,7 +37,7 @@ const fn = (x: number) => (x - quadraticFunctionPointA.x) * (x - quadraticFuncti
                         </Mafs>
                     <h2 id="2">Квадратные</h2>
                         <p>Квадратные функции&nbsp;&mdash; это функции вида <Latex>{`$y = ax^2 + bx + c$`}</Latex>. </p>
-                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-3,3], y:[-1,1]}}>
+                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[-5,5], y:[-1,3]}}>
                             <Coordinates.Cartesian/>
                             <Plot.OfX y={(x) => (quadraticFunctionPointK.y * fn(x)) / fn(mid)}/>
                                 {quadraticFunctionPointA.element}
