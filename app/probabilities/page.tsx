@@ -380,12 +380,10 @@ export default function Probabilities() {
                             <Latex>{`$$M(X-M(X))=0$$`}</Latex>
                         <h3 id="7b">Дисперсия</h3>
                             <p>Целесообразно находить меру рассеивания значений случайной величины вокруг её математического ожидания. То есть математическое ожидание квадрата отклонения случайной величины от её математического ожидания.</p>
-                            <Latex>{`$$D(X)=\\sum\\limits_{i=1}^n (x_i - M(X))^2 P_i$$`}</Latex>
-                            <Latex>{`$$D(X)=\\int\\limits_{-\\infty}^{\\infty}(x- M(X))^2 f(x)dx$$`}</Latex>
+                            <Latex>{`$$D(X)=M(X^2)-M^2(X)$$`}</Latex>
                             <Latex>{`$$D(X\\pm Y)=D(X)+D(Y)$$`}</Latex>
                             <Latex>{`$$D(const)=0$$`}</Latex>
                             <Latex>{`$$D(const \\cdot X)=const^2 \\cdot D(X)$$`}</Latex>
-                            <Latex>{`$$D(X)=M(X^2)-M^2(X)$$`}</Latex>
                         <h3 id="7c">Среднеквадратическое отклонение</h3>
                             <p>Показывает вариацию значения случайной величины вокруг среднего.</p>
                             <Latex>{`$$\\sigma(X) = \\sqrt{D(X)}$$`}</Latex>
