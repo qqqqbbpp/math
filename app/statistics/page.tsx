@@ -176,7 +176,7 @@ export default function Statistics() {
                             <Latex>{`$$\\chi^2 \\in \\omega, ~H_0: "-", ~H_1: "+" | ~\\alpha$$`}</Latex>
                         <h3 id="6c">Проверка гипотезы о равенстве генеральных дисперсий</h3>
                             <p>Допустим имеются две независимые выборки объемом <Latex>{`$n_x$`}</Latex> и <Latex>{`$n_y$`}</Latex> из соответствующих генеральных совокупностей <Latex>{`$X, Y$`}</Latex>. Известно, что закон распределения в обоих генеральных совокупностях&nbsp;&mdash; нормальный.</p>
-                            <Latex>{`$$X \\sim M(a_x, \\sigma_x), ~Y \\sim N(a_y, \\sigma_y)$$`}</Latex>
+                            <Latex>{`$$X \\sim N(a_x, \\sigma_x), ~Y \\sim N(a_y, \\sigma_y)$$`}</Latex>
                             <p>С применением выборочного метода, вычислены выборочные характеристики.</p>
                             <Latex>{`$$\\overline X_B, ~\\overline Y_B$$`}</Latex>
                             <Latex>{`$$S_x^2, ~S_y^2$$`}</Latex>
