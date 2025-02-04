@@ -9,20 +9,20 @@ import "./styles/16x9.css";
 const ptSerif = PT_Serif({ subsets: ['cyrillic'], weight: '400', style: ['normal', 'italic'], display: 'swap', variable: '--pt-serif' });
 
 export const metadata: Metadata = {
-  title: "Math",
-  description: "Mafs and latex math app",
+    title: "Math",
+    description: "Mafs and latex math app"
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="ru">
-      <body className={`${ptSerif.variable}`}>
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html lang="ru">
+            <body className={`${ptSerif.variable}`}>
+                {children}
+            </body>
+        </html>
+    );
 }

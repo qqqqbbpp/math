@@ -104,7 +104,7 @@ export default function Home() {
                                 </ol>
                             </details>
                             <details>
-                                <summary>Вероятности</summary>
+                                <summary>Теория вероятностей</summary>
                                 <ol>
                                     <li><Link aria-label="Основные понятия в теории вероятностей" href="https://qqqqbbpp.github.io/math/probabilities#1">Основные понятия</Link>
                                         <ol className="lower-latin">
@@ -178,7 +178,7 @@ export default function Home() {
                                 </ol>
                             </details>
                             <details>
-                                <summary>Статистика</summary>
+                                <summary>Математическая статистика</summary>
                                 <ol>
                                     <li><Link aria-label="Выборочный метод" href="https://qqqqbbpp.github.io/math/statistics#1">Выборочный метод</Link></li>
                                     <li><Link aria-label="Ряд распределений" href="https://qqqqbbpp.github.io/math/statistics#2">Ряд распределений</Link></li>
@@ -216,6 +216,12 @@ export default function Home() {
                                             <li><Link aria-label="Проверка гипотезы о равенстве вероятностей" href="https://qqqqbbpp.github.io/math/statistics#6e">Проверка гипотезы о равенстве вероятностей</Link></li>
                                         </ol>
                                     </li>
+                                </ol>
+                            </details>
+                            <details>
+                                <summary>Дискретная математика</summary>
+                                <ol>
+                                    <li><Link aria-label="..." href="https://qqqqbbpp.github.io/math/discrete#1">...</Link></li>
                                 </ol>
                             </details>
                         </div>

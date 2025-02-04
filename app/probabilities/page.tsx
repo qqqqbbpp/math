@@ -375,15 +375,15 @@ export default function Probabilities() {
                             <Latex>{`$$M(X)=\\int\\limits_{-\\infty}^{\\infty} xf(x)dx$$`}</Latex>
                             <Latex>{`$$M(X\\pm Y)=M(X)\\pm M(Y)$$`}</Latex>
                             <Latex>{`$$M(X \\cdot Y)= M(X) \\cdot M(Y)$$`}</Latex>
-                            <Latex>{`$$M(const)=const$$`}</Latex>
                             <Latex>{`$$M(const \\cdot X)=const \\cdot M(X)$$`}</Latex>
+                            <Latex>{`$$M(const)=const$$`}</Latex>
                             <Latex>{`$$M(X-M(X))=0$$`}</Latex>
                         <h3 id="7b">Дисперсия</h3>
                             <p>Целесообразно находить меру рассеивания значений случайной величины вокруг её математического ожидания.</p>
                             <Latex>{`$$D(X)=M(X^2)-M^2(X)$$`}</Latex>
                             <Latex>{`$$D(X\\pm Y)=D(X)+D(Y)$$`}</Latex>
-                            <Latex>{`$$D(const)=0$$`}</Latex>
                             <Latex>{`$$D(const \\cdot X)=const^2 \\cdot D(X)$$`}</Latex>
+                            <Latex>{`$$D(const)=0$$`}</Latex>
                         <h3 id="7c">Среднеквадратическое отклонение</h3>
                             <p>Показывает вариацию значения случайной величины вокруг среднего.</p>
                             <Latex>{`$$\\sigma(X) = \\sqrt{D(X)}$$`}</Latex>
@@ -548,7 +548,7 @@ export default function Probabilities() {
             </main>
             <Footer 
                 prevPage="Функции" prevHref="https://qqqqbbpp.github.io/math/functions" 
-                nextPage="Статистика" nextHref="https://qqqqbbpp.github.io/math/statistics" 
+                nextPage="Математическая статистика" nextHref="https://qqqqbbpp.github.io/math/statistics" 
             />
         </>
     )

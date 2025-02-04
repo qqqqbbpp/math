@@ -50,7 +50,7 @@ const fn = (x: number) => (x - quadraticFunctionPointA.x) * (x - quadraticFuncti
             </main>
             <Footer 
                 prevPage="Уравнения" prevHref="https://qqqqbbpp.github.io/math/equations" 
-                nextPage="Вероятности" nextHref="https://qqqqbbpp.github.io/math/probabilities" 
+                nextPage="Теория вероятностей" nextHref="https://qqqqbbpp.github.io/math/probabilities" 
             />
         </>
     )

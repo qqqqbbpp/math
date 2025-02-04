@@ -1,6 +1,8 @@
+"use client"
 import Header from "@/app/components/Header";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
+import { Mafs, Coordinates, Plot } from "mafs"
 import Footer from "@/app/components/Footer";
 
 export default function Statistics() {
@@ -67,8 +69,48 @@ export default function Statistics() {
                             <Latex>{`$$F^*(x)=\\frac{H(x)}{n}=\\frac{m(X<x)}{n}$$`}</Latex>
                     <h2 id="3">Графическое представление</h2>
                         <p>Дискретный ряд изображают в виде полигона частот <Latex>{`$x_i, m_i$`}</Latex> или частости <Latex>{`$x_i, w_i$`}</Latex>.</p>
+                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,3]}}>
+                            <Coordinates.Cartesian/>
+                            <Plot.OfX
+                                y={(x) => {
+                                    if (x < 0) return 0;
+                                    else if (x >= 0 && x < 1) return x;
+                                    else if (x >= 1 && x < 2) return 2 * x - 1;
+                                    else if (x >= 2 && x < 5) return -x + 5;
+                                    else return 0;
+                                }}
+                            />
+                        </Mafs>
                         <p>Интервальный ряд изображают в виде гистограммы&nbsp;&mdash; ступенчатой фигуры, состоящей из прямоугольников основания которых равны интервалам длины <Latex>{`$h_i$`}</Latex>, а высоты плотности частот <Latex>{`$\\frac{m_i}{h}$`}</Latex> или частости <Latex>{`$\\frac{w_i}{h}$`}</Latex>.</p>
+                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,3]}}>
+                            <Coordinates.Cartesian/>
+                            <Plot.OfX
+                                y={(x) => {
+                                    if (x < 0) return 0;
+                                    else if (x >= 0 && x < 1) return 1;
+                                    else if (x >= 1 && x < 2) return 2;
+                                    else if (x >= 2 && x < 3) return 3;
+                                    else if (x >= 3 && x < 4) return 2;
+                                    else if (x >= 4 && x < 5) return 1;
+                                    else return 0;
+                                }}
+                            />
+                        </Mafs>
                         <p>Кумулятивные ряды изображают в виде кумуляты (аналог графика интегральной функции случайной величины).</p>
+                        <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,5]}}>
+                            <Coordinates.Cartesian/>
+                            <Plot.OfX
+                                y={(x) => {
+                                    if (x < 0) return 0;
+                                    else if (x >= 0 && x < 1) return 1;
+                                    else if (x >= 1 && x < 2) return 2;
+                                    else if (x >= 2 && x < 3) return 3;
+                                    else if (x >= 3 && x < 4) return 4;
+                                    else if (x >= 4 && x < 5) return 5;
+                                    else return 0;
+                                }}
+                            />
+                        </Mafs>
                     <h2 id="4">Выборочные характеристики</h2>
                         <h3 id="4a">Выборочная средняя</h3>
                             <p>Характеризует типичное для выборки значение признака <Latex>{`$x$`}</Latex> причем лишь приближенно. В случае интервального вариационного ряда необходимо перейти к дискретному, путём нахождения середины интервала.</p>
@@ -227,7 +269,7 @@ export default function Statistics() {
             </main>
             <Footer 
                 prevPage="Вероятности" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
-                // nextPage="..." nextHref="#" 
+                nextPage="Дискретная математика" nextHref="https://qqqqbbpp.github.io/math/discrete"
             />
         </>
     )

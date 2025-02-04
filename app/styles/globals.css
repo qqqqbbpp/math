@@ -116,11 +116,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-p, .MafsView, table {
-    margin: 0 0 2.5svh;
+p, .MafsView, table, .katex-display {
+    margin: 0 0 2.5svh!important;
 }
 
-.katex-display{
+.katex-display {
     overflow-x: scroll;
     overflow-y: hidden;
 }
