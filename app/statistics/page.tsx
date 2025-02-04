@@ -175,7 +175,7 @@ export default function Statistics() {
                         <Latex>{`$$(\\gamma \\geq 0,9)$$`}</Latex>
                         <p>Находят точность интервальной оценки <Latex>{`$\\Delta$`}</Latex>.</p>
                         <Latex>{`$$P(\\theta^* - \\Delta < \\theta < \\theta^* + \\Delta) = \\gamma$$`}</Latex>
-                        <h3 id="5a">Интервальная оценка математического ожидания нормального распределения при известном среднем квадратическом отклонении</h3>
+                        <h3 id="5a">Интервальная оценка математического ожидания нормального распределения при известном среднеквадратическим отклонении</h3>
                             <p>Пусть существует <Latex>{`$X\\sim N(a=M(X), ~\\sigma=\\sigma(X)).$`}</Latex> Предположим, что параметр <Latex>{`$\\sigma$`}</Latex> известен, требуют оценить неизвестный параметр <Latex>{`$a$`}</Latex> для этого проводится выборка объемом <Latex>{`$n$`}</Latex> и рассчитывается средняя выборочная. Известно что средняя выборочная является точной оценкой средней генеральной. С доверительной вероятность гамма найдем такое число <Latex>{`$\\Delta > 0,$`}</Latex> чтобы выполнялось равенство доверительного интервала для оценки истинного среднего значения генеральной совокупности.</p>
                             <Latex>{`$$P(\\overline{X_B} - \\Delta < \\overline X_{gen} < \\overline X_B + \\Delta) = \\gamma$$`}</Latex>
                             <Latex>{`$$\\gamma = 2\\Phi(\\frac{\\Delta \\sqrt n}{\\sigma})$$`}</Latex>
@@ -268,7 +268,7 @@ export default function Statistics() {
                 </div>
             </main>
             <Footer 
-                prevPage="Вероятности" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
+                prevPage="Теория вероятностей" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
                 nextPage="Дискретная математика" nextHref="https://qqqqbbpp.github.io/math/discrete"
             />
         </>
