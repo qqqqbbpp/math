@@ -13,7 +13,7 @@ const linearFunctionPointB = useMovablePoint([0, 2], { constrain: "vertical", co
 const linearFunctionPointK = useMovablePoint([2, 0], { constrain: "horizontal", color: blue});
 
 const quadraticFunctionPointA = useMovablePoint([1, 0], { constrain: "horizontal", color: blue});
-const quadraticFunctionPointB = useMovablePoint([2, 0], { constrain: "horizontal", color: blue});
+const quadraticFunctionPointB = useMovablePoint([3, 0], { constrain: "horizontal", color: blue});
 const quadraticFunctionPointK = useMovablePoint([0, -1], { constrain: "vertical", color: blue});
 
 const mid = (quadraticFunctionPointA.x + quadraticFunctionPointB.x) / 2
