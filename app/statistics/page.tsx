@@ -268,7 +268,7 @@ export default function Statistics() {
                 </div>
             </main>
             <Footer 
-                prevPage="Теория вероятностей" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
+                prevPage="Вероятности" prevHref="https://qqqqbbpp.github.io/math/probabilities" 
                 nextPage="Дискретная математика" nextHref="https://qqqqbbpp.github.io/math/discrete"
             />
         </>

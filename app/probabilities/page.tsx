@@ -548,7 +548,7 @@ export default function Probabilities() {
             </main>
             <Footer 
                 prevPage="Функции" prevHref="https://qqqqbbpp.github.io/math/functions" 
-                nextPage="Математическая статистика" nextHref="https://qqqqbbpp.github.io/math/statistics" 
+                nextPage="Статистика" nextHref="https://qqqqbbpp.github.io/math/statistics" 
             />
         </>
     )
