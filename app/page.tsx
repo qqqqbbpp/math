@@ -104,7 +104,7 @@ export default function Home() {
                                 </ol>
                             </details>
                             <details>
-                                <summary>Теория вероятностей</summary>
+                                <summary>Вероятности</summary>
                                 <ol>
                                     <li><Link aria-label="Основные понятия в теории вероятностей" href="https://qqqqbbpp.github.io/math/probabilities#1">Основные понятия</Link>
                                         <ol className="lower-latin">
@@ -178,7 +178,7 @@ export default function Home() {
                                 </ol>
                             </details>
                             <details>
-                                <summary>Математическая статистика</summary>
+                                <summary>Статистика</summary>
                                 <ol>
                                     <li><Link aria-label="Выборочный метод" href="https://qqqqbbpp.github.io/math/statistics#1">Выборочный метод</Link></li>
                                     <li><Link aria-label="Ряд распределений" href="https://qqqqbbpp.github.io/math/statistics#2">Ряд распределений</Link></li>
@@ -221,7 +221,22 @@ export default function Home() {
                             <details>
                                 <summary>Дискретная математика</summary>
                                 <ol>
-                                    <li><Link aria-label="..." href="https://qqqqbbpp.github.io/math/discrete#1">...</Link></li>
+                                    <li><Link aria-label="Основные понятия" href="https://qqqqbbpp.github.io/math/discrete#1">Основные понятия</Link>
+                                        <ol className="lower-latin">
+                                            <li><Link aria-label="Элементы теории множеств" href="https://qqqqbbpp.github.io/math/discrete#1a">Элементы теории множеств</Link></li>
+                                            <li><Link aria-label="Свойства операций" href="https://qqqqbbpp.github.io/math/discrete#1b">Свойства операций</Link></li>
+                                            <li><Link aria-label="Элементы математической логики" href="https://qqqqbbpp.github.io/math/discrete#1c">Элементы математической логики</Link></li>
+                                            <li><Link aria-label="Таблица истиности" href="https://qqqqbbpp.github.io/math/discrete#1d">Таблица истиности</Link></li>
+                                        </ol>
+                                    </li>
+                                    <li><Link aria-label="Равносильности" href="https://qqqqbbpp.github.io/math/discrete#2">Равносильности</Link>
+                                        <ol className="lower-latin">
+                                            <li><Link aria-label="Основные равносильности" href="https://qqqqbbpp.github.io/math/discrete#2a">Основные равносильности</Link></li>
+                                            <li><Link aria-label="Равносильности при раскрытии логических операций" href="https://qqqqbbpp.github.io/math/discrete#2b">Равносильности при раскрытии логических операций</Link></li>
+                                            <li><Link aria-label="Алгоритм доказательства равносильности логических формул" href="https://qqqqbbpp.github.io/math/discrete#2c">Алгоритм доказательства равносильности логических формул</Link></li>
+                                        </ol>
+                                    </li>
+                                    <li><Link aria-label="Построение отрицания к логической формуле" href="https://qqqqbbpp.github.io/math/discrete#3">Построение отрицания к логической формуле</Link></li>
                                 </ol>
                             </details>
                         </div>
