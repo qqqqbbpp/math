@@ -228,7 +228,7 @@ export default function Discrete() {
                     <Latex>{`$$
                     \\mu_A(x)=\\begin{cases}
                         1; &x\\in A \\newline
-                        0; &a \\not\\in x A
+                        0; &a \\not\\in A
                     \\end{cases}
                     $$`}</Latex>
                     <h3 id="4b">Теоретико множественные операции</h3>
