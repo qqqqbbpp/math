@@ -276,9 +276,9 @@ export default function Discrete() {
                         </tbody>
                     </table>
                     <p>Если на множестве <Latex>{`$2^E$`}</Latex> задана булева алгебра с операциями <Latex>{`$\\odot, \\oplus, \\subset,$`}</Latex> то булеву сумма и произведение можно заменить на операции взятия максимума и минимума.</p>
-                    <h2>Нечеткие множества</h2>
+                    <h2 id="5">Нечеткие множества</h2>
                     <p>Нечетким подмножеством <Latex>{`$\\tilde A$`}</Latex> называется множество всех элементов <Latex>{`$E$`}</Latex> снабженных функцией принадлежности <Latex>{`$\\mu_{\\tilde A} (x)$`}</Latex>, которая принимает значения на отрезке [0, 1].</p>
-                    <h3>Операции над нечеткими подмножествами</h3>
+                    <h3 id="5a">Операции над нечеткими подмножествами</h3>
                     <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
                     <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde C} \\geq \\mu_{\\tilde A}$$`}</Latex>
@@ -286,11 +286,11 @@ export default function Discrete() {
                     <Latex>{`$$\\tilde A \\cap \\tilde B \\quad \\mu_{\\tilde A \\cap \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cup \\tilde B \\quad \\mu_{\\tilde A \\cup \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A \\backslash \\tilde B} = min(\\mu_{\\tilde A}, (1 - \\mu_{\\tilde B}))$$`}</Latex>
-                    <h3>Свойства операций над нечеткими множествами</h3>
+                    <h3 id="5b">Свойства операций над нечеткими множествами</h3>
                     <p>Свойства операций для нечетких множеств повторяют свойства обчных множеств, за исключением двух, которые не выполняются.</p>
                     <Latex>{`$$\\tilde A \\cup \\subset \\tilde A \\neq E$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cap \\subset \\tilde A \\neq \\emptyset$$`}</Latex>
-                    <h3>Геометрическая интерпритация нечетких множеств</h3>
+                    <h3 id="5c">Геометрическая интерпритация нечетких множеств</h3>
                     <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,1]}}>
                         <Coordinates.Cartesian/>
                         <Plot.OfX
@@ -347,9 +347,9 @@ export default function Discrete() {
                         />
                         <LaTeX at={[1, 1.25]} tex={String.raw`\subset \tilde A`} color="#3399ff"/>
                     </Mafs>
-                    <h3>Элементы нечеткой логики</h3>
+                    <h3 id="5d">Элементы нечеткой логики</h3>
                     <p>Любое высказывание в бинарной логике можно сопроводить функцией истиности <Latex>{`$(A, \\mu_A).$`}</Latex> В нечеткой логике каждому высказыванию соответствует функция истиности, принимающая значения на отрезке <Latex>{`$[0, 1].$`}</Latex></p>
-                    <h4>Свойства операций над нечеткими высказываниями</h4>
+                    <h3 id="5e">Свойства операций над нечеткими высказываниями</h3>
                     <Latex>{`$$\\mu_{\\tilde A \\wedge \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A \\vee \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\neg \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>

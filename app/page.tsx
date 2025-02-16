@@ -237,6 +237,21 @@ export default function Home() {
                                         </ol>
                                     </li>
                                     <li><Link aria-label="Построение отрицания к логической формуле" href="https://qqqqbbpp.github.io/math/discrete#3">Построение отрицания к логической формуле</Link></li>
+                                    <li><Link aria-label="Булева алгебра" href="https://qqqqbbpp.github.io/math/discrete#4">Булева алгебра</Link>
+                                        <ol className="lower-latin">
+                                            <li><Link aria-label="Применение булевой алгебры в теории множеств" href="https://qqqqbbpp.github.io/math/discrete#4a">Применение булевой алгебры в теории множеств</Link></li>
+                                            <li><Link aria-label="Теоретико множественные операции" href="https://qqqqbbpp.github.io/math/discrete#4b">Теоретико множественные операции</Link></li>
+                                        </ol>
+                                    </li>
+                                    <li><Link aria-label="Нечеткие множества" href="https://qqqqbbpp.github.io/math/discrete#5">Нечеткие множества</Link>
+                                        <ol className="lower-latin">
+                                            <li><Link aria-label="Операции над нечеткими подмножествами" href="https://qqqqbbpp.github.io/math/discrete#5a">Операции над нечеткими подмножествами</Link></li>
+                                            <li><Link aria-label="Свойства операций над нечеткими множествами" href="https://qqqqbbpp.github.io/math/discrete#5b">Свойства операций над нечеткими множествами</Link></li>
+                                            <li><Link aria-label="Геометрическая интерпритация нечетких множеств" href="https://qqqqbbpp.github.io/math/discrete#5с">Геометрическая интерпритация нечетких множеств</Link></li>
+                                            <li><Link aria-label="Элементы нечеткой логики" href="https://qqqqbbpp.github.io/math/discrete#5d">Элементы нечеткой логики</Link></li>
+                                            <li><Link aria-label="Свойства операций над нечеткими высказываниями" href="https://qqqqbbpp.github.io/math/discrete#5e">Свойства операций над нечеткими высказываниями</Link></li>
+                                        </ol>
+                                    </li>
                                 </ol>
                             </details>
                         </div>
