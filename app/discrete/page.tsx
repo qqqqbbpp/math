@@ -1,6 +1,8 @@
+"use client"
 import Header from "@/app/components/Header";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
+import { Mafs, Coordinates, Line, Plot, LaTeX } from "mafs"
 import Footer from "@/app/components/Footer";
 
 export default function Discrete() {
@@ -17,7 +19,7 @@ export default function Discrete() {
                     <Latex>{`$$x \\in A \\subset A \\Leftrightarrow x \\in E \\wedge x \\notin A$$`}</Latex>
                     <Latex>{`$$X \\subset A \\setminus B \\Leftrightarrow x \\in a \\wedge x \\notin B$$`}</Latex>
                     <h2 id="1b">Свойства операций</h2>
-                    <p>Пусть <Latex>{`$E$`}</Latex>&nbsp;&mdash; некоторое множество и <Latex>{`$A, B, C$`}</Latex>&nbsp;&mdash; его подмножество.</p>
+                    <Latex>{`$$A, B, C \\subset E$$`}</Latex>
                     <Latex>{`$$A \\cup B = B \\cup A,  ~A \\cap B = B \\cap A$$`}</Latex>
                     <Latex>{`$$A \\cup (B \\cup C) = (A \\cup B) \\cup C, ~A \\cap (B \\cap C) = (A \\cap B) \\cap C$$`}</Latex>
                     <Latex>{`$$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C), ~A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$$`}</Latex>
@@ -124,9 +126,8 @@ export default function Discrete() {
                         </tbody>
                     </table>
                     <h2 id="1d">Свойства логических операций</h2>
-                    <p><Latex>{`$T$`}</Latex>&nbsp;&mdash; некоторое истиное высказывание, <Latex>{`$F$`}</Latex>&nbsp;&mdash; некоторое ложное высказывание.</p>
-                    <Latex>{`$$A \\wedge T = A, ~A \\vee T = T$$`}</Latex>
-                    <Latex>{`$$A \\wedge \\neg A = F, ~A \\cup \\neg A = T$$`}</Latex>
+                    <Latex>{`$$A \\wedge 1 = A, ~A \\vee 1 = 1$$`}</Latex>
+                    <Latex>{`$$A \\wedge \\neg A = 0, ~A \\cup \\neg A = 1$$`}</Latex>
                     <Latex>{`$$\\neg (A \\wedge B) = \\neg A \\vee \\neg B, ~\\neg (A \\vee B) = \\neg A \\cap \\neg B$$`}</Latex>
                     <Latex>{`$$$$`}</Latex>
                     <p>Если несколько высказываний связаны между собой различными знаками логических операций, то полученные выражения называют логической формулой.</p>
@@ -181,7 +182,7 @@ export default function Discrete() {
                             </tr>
                         </tbody>
                     </table>
-                    <p>Формула выполнима при <Latex>{`$A=(1, 1, 0), ~B=(1, 0, 0).$`}</Latex></p>
+                    <p>Формула выполнима при <Latex>{`$A=(1, 1, 0); ~B=(1, 0, 0).$`}</Latex></p>
                     <p>Две формулы называются равносильными если их значения истиности совпадают при любых значениях входящих в них высказываний.</p>
                     <Latex>{`$$A \\equiv B$$`}</Latex>
                     <h2 id="2">Равносильности</h2>
@@ -212,13 +213,151 @@ export default function Discrete() {
                         </li>
                         <li>
                             <p>Все кванторы меняются на смежные.</p>
-                            <Latex>{`$$\\forall \\to E, ~E \\to \\forall$$`}</Latex>
+                            <Latex>{`$$\\forall \\to \\exists, ~\\exists \\to \\forall$$`}</Latex>
                         </li>
                         <li>
-                            <p>Все "и" меняются на "или".</p>
+                            <p>Все «и» меняются на «или».</p>
                             <Latex>{`$$\\wedge \\to \\vee, ~\\vee \\to \\wedge$$`}</Latex>
                         </li>
                     </ol>
+                    <h2 id="4">Булева алгебра</h2>
+                    <p>Булевой переменной называется переменная, которая принимеает значения на двухэлементном множестве. Булевой функцией называется функция от булевой переменной, принимающей значения на том же двухэлементном множестве.</p>
+                    <p>Булевой алгеброй называется не пустое множество <Latex>{`$B,$`}</Latex> содержащее наименьщий элемент 0 (ноль) и наибольший элемент 1 (единица) на котором заданы три операции: <Latex>{`$\\vee, \\wedge, \\neg,$`}</Latex> удовлетворяющие аксиомам <Latex>{`$B_1$`}</Latex>&nbsp;&mdash; коммутативности, <Latex>{`$B_2$`}</Latex>&nbsp;&mdash; ассоциативности, <Latex>{`$B_3$`}</Latex>&nbsp;&mdash; дистрибутивности, <Latex>{`$B_4$`}</Latex>&nbsp;&mdash; поглащения и <Latex>{`$B_5$`}</Latex>&nbsp;&mdash;  <Latex>{`$(X \\wedge \\neg X) \\vee Y = Y, (X\\vee \\neg X \\wedge Y = Y)$`}</Latex>.</p>
+                    <h3 id="4a">Применение булевой алгебры в теории множеств</h3>
+                    <p>Характеристической функцией множества <Latex>{`$A$`}</Latex> (функцией принадлежности) можно задать любое подмножество <Latex>{`$E.$`}</Latex></p>
+                    <Latex>{`$$
+                    \\mu_A(x)=\\begin{cases}
+                        1; &x\\in A \\newline
+                        0; &a \\not\\in x A
+                    \\end{cases}
+                    $$`}</Latex>
+                    <h3 id="4b">Теоретико множественные операции</h3>
+                    <Latex>{`$$A=B \\Leftrightarrow \\mu_A = \\mu_B$$`}</Latex>
+                    <Latex>{`$$A \\subset B \\Leftrightarrow \\mu_A \\geq \\mu_B$$`}</Latex>
+                    <Latex>{`$$\\subset A \\quad \\mu_{\\subset A} = 1 - \\mu_A$$`}</Latex>
+                    <Latex>{`$$A \\cup B \\quad \\mu_{A\\cup B} = \\mu_A \\oplus \\mu_B$$`}</Latex>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><Latex>{`$\\oplus$`}</Latex></td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <Latex>{`$$A \\cap B \\quad \\mu_{A\\cap B} = \\mu_A \\odot \\mu_B$$`}</Latex>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><Latex>{`$\\odot$`}</Latex></td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Если на множестве <Latex>{`$2^E$`}</Latex> задана булева алгебра с операциями <Latex>{`$\\odot, \\oplus, \\subset,$`}</Latex> то булеву сумма и произведение можно заменить на операции взятия максимума и минимума.</p>
+                    <h2>Нечеткие множества</h2>
+                    <p>Нечетким подмножеством <Latex>{`$\\tilde A$`}</Latex> называется множество всех элементов <Latex>{`$E$`}</Latex> снабженных функцией принадлежности <Latex>{`$\\mu_{\\tilde A} (x)$`}</Latex>, которая принимает значения на отрезке [0, 1].</p>
+                    <h3>Операции над нечеткими подмножествами</h3>
+                    <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
+                    <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde C} \\geq \\mu_{\\tilde A}$$`}</Latex>
+                    <Latex>{`$$\\subset A \\quad \\mu_{\\subset \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\cap \\tilde B \\quad \\mu_{\\tilde A \\cap \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\cup \\tilde B \\quad \\mu_{\\tilde A \\cup \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
+                    <Latex>{`$$\\mu_{\\tilde A \\backslash \\tilde B} = min(\\mu_{\\tilde A}, (1 - \\mu_{\\tilde B}))$$`}</Latex>
+                    <h3>Свойства операций над нечеткими множествами</h3>
+                    <p>Свойства операций для нечетких множеств повторяют свойства обчных множеств, за исключением двух, которые не выполняются.</p>
+                    <Latex>{`$$\\tilde A \\cup \\subset \\tilde A \\neq E$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\cap \\subset \\tilde A \\neq \\emptyset$$`}</Latex>
+                    <h3>Геометрическая интерпритация нечетких множеств</h3>
+                    <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,1]}}>
+                        <Coordinates.Cartesian/>
+                        <Plot.OfX
+                            y={(x) => {
+                                if (x < 0) return 0;
+                                else if (x >= 0 && x <= 1) return x;
+                                else if (x >= 1 && x <= 2) return 1;
+                                else if (x >= 2 && x <= 3) return -x+3;
+                                else return 0;
+                            }}
+                            color="#3399ff"
+                        />
+                        <Plot.OfX
+                            y={(x) => {
+                                if (x < 0) return 0;
+                                else if (x >= 2 && x <= 3) return x-2;
+                                else if (x >= 3 && x <= 4) return 1;
+                                else if (x >= 4 && x <= 5) return -x+5;
+                                else return 0;
+                            }}
+                            color="#3399ff"
+                        />
+                        <Plot.OfX
+                            y={(x) => {
+                                if (x < 0) return 0;
+                                else if (x >= 2 && x <= 3) return -Math.abs(x - 2.5) + 0.5;
+                                else return 0;
+                            }}
+                            color="#cc00cc"
+                        />
+                        <LaTeX at={[1, -0.25]} tex={String.raw`\tilde A \cup \tilde B`} color="#cc00cc"/>
+                        <LaTeX at={[1, 1.25]} tex={String.raw`\tilde A \cap \tilde B`} color="#3399ff"/>
+                    </Mafs>
+                    <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,1]}}>
+                        <Coordinates.Cartesian/>
+                        <Plot.OfX
+                            y={(x) => {
+                                if (x < 1) return 0;
+                                else if (x >= 1 && x <= 2) return x-1;
+                                else if (x >= 2 && x <= 3) return 1;
+                                else if (x >= 3 && x <= 4) return -x+4;
+                                else return 0;
+                            }}
+                        />
+                        <Plot.OfX
+                            y={(x) => {
+                                if (x < 0) return 1;
+                                else if (x >= 1 && x <= 2) return -x+2;
+                                else if (x >= 2 && x <= 3) return 0;
+                                else if (x >= 3 && x <= 4) return x-3;
+                                else return 1;
+                            }}
+                            color="#3399ff"
+                        />
+                        <LaTeX at={[1, 1.25]} tex={String.raw`\subset \tilde A`} color="#3399ff"/>
+                    </Mafs>
+                    <h3>Элементы нечеткой логики</h3>
+                    <p>Любое высказывание в бинарной логике можно сопроводить функцией истиности <Latex>{`$(A, \\mu_A).$`}</Latex> В нечеткой логике каждому высказыванию соответствует функция истиности, принимающая значения на отрезке <Latex>{`$[0, 1].$`}</Latex></p>
+                    <h4>Свойства операций над нечеткими высказываниями</h4>
+                    <Latex>{`$$\\mu_{\\tilde A \\wedge \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
+                    <Latex>{`$$\\mu_{\\tilde A \\vee \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
+                    <Latex>{`$$\\mu_{\\neg \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
+                    <Latex>{`$$A \\Rightarrow B \\quad \\mu_{\\tilde B} > \\mu_{\\tilde A}$$`}</Latex>
+                    <p>Для нечетких высказываний справедливы все свойства логических операций, которе справедливы для обычных высказываний за исключением двух, которые не выполняются.</p>
+                    <Latex>{`$$\\mu_{\\tilde A} \\wedge \\tilde A \\neq 0$$`}</Latex>
+                    <Latex>{`$$\\mu_{\\tilde A} \\vee \\neg \\tilde A \\neq 1$$`}</Latex>
+                    
                 </div>
             </main>
             <Footer
