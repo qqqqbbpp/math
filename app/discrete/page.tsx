@@ -2,7 +2,7 @@
 import Header from "@/app/components/Header";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
-import { Mafs, Coordinates, Line, Plot, LaTeX } from "mafs"
+import { Mafs, Coordinates, Plot, LaTeX } from "mafs"
 import Footer from "@/app/components/Footer";
 
 export default function Discrete() {
