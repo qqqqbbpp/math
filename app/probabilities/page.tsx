@@ -504,7 +504,7 @@ export default function Probabilities() {
                         <Coordinates.Cartesian />
                         <Plot.OfX y={(x) => (1 / (1 * Math.sqrt(2 * Math.PI))) * Math.exp(-((x - 0) ** 2) / (2 * 1 ** 2))} />
                     </Mafs>
-                    <Latex>{`$$F(x)=\\frac{1}{\\sigma \\sqrt{2\\pi}} \\int\\limits_{-\\infty}^\\infty e^{-\\frac{(x-a)^2}{2 \\sigma^2}}$$`}</Latex>
+                    <Latex>{`$$F(x)=\\frac{1}{\\sigma \\sqrt{2\\pi}} \\cdot \\int\\limits_{-\\infty}^\\infty e^{-\\frac{(x-a)^2}{2 \\sigma^2}}$$`}</Latex>
                     <Mafs preserveAspectRatio={false} height={300} viewBox={{ x: [-3, 3], y: [0, 1] }}>
                         <Coordinates.Cartesian />
                         <Plot.OfX
@@ -522,7 +522,7 @@ export default function Probabilities() {
                         />
                     </Mafs>
                     <Latex>{`$$M(X)=a, ~D(X)=\\sigma^2, ~\\sigma(X)=\\sigma$$`}</Latex>
-                    <Latex>{`$$P(\\alpha < X < \\beta) = \\Phi\\left(\\frac{\\beta - a}{\\sigma}\\right) - \\Phi\\left(\\frac{\\alpha - a}{\\sigma} \\right), ~\\Phi(x)=\\frac{1}{\\sqrt{2 \\pi}} \\int\\limits_{-\\infty}^x ~e^{-\\frac{x^2}{2}} dx$$`}</Latex>
+                    <Latex>{`$$P(\\alpha < X < \\beta) = \\Phi\\left(\\frac{\\beta - a}{\\sigma}\\right) - \\Phi\\left(\\frac{\\alpha - a}{\\sigma} \\right), ~\\Phi(x)=\\frac{1}{\\sqrt{2 \\pi}} \\cdot \\int\\limits_{-\\infty}^x ~e^{-\\frac{x^2}{2}} dx$$`}</Latex>
                     <Latex>{`$$P(|X-a|\\leq \\xi)=2\\Phi \\left(\\frac{\\xi}{\\sigma}\\right)$$`}</Latex>
                     <h2 id="9">Предельные теоремы теории вероятности</h2>
                     <p>Результаты отдельных наблюдений при относительно равенстве условий их проведения всё же отличаются друг от друга, хотя средний результат обнаруживает значительную устойчивость. Условия при которых проявляется такая закономерность рассматриваются в предельных теоремах.</p>

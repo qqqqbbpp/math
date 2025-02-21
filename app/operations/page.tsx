@@ -37,7 +37,7 @@ export default function Operations() {
                     <Latex>{`$$2 : 1 = 2\\underbrace{-1-1}_{\\text{2}} = 2$$`}</Latex>
                     <h3 id="4d">Треугольное число</h3>
                     <p>Треугольное число&nbsp;&mdash; это гипероперация сложения всех положительных целых чисел от&nbsp;1&nbsp;до&nbsp;<Latex>{`$n$`}</Latex>.</p>
-                    <Latex>{`$$T_n = 1 + 2 \\ldots + n = \\sum\\limits_{i=1}^n i$$`}</Latex>
+                    <Latex>{`$$T_n = 1 + 2 + \\ldots + n = \\sum\\limits_{i=1}^n i$$`}</Latex>
                     <Latex>{`$$T_2 = 1 + 2 = 3$$`}</Latex>
                     <h3 id="4e">Возведение в степень</h3>
                     <p>Возведение в&nbsp;степень&nbsp;&mdash; это гипероперация умножения, результатом которой является произведение основания&nbsp;<Latex>{`$a$`}</Latex> на&nbsp;себя столько раз, сколько указано в&nbsp;показателе степени&nbsp;<Latex>{`$b$`}</Latex>.</p>
