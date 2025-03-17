@@ -15,23 +15,19 @@ export default function Home() {
                                     <li><Link aria-label="Сложение" href="https://qqqqbbpp.github.io/math/operations#1">Сложение</Link></li>
                                     <li><Link aria-label="Сумма" href="https://qqqqbbpp.github.io/math/operations#2">Сумма</Link></li>
                                     <li><Link aria-label="Вычитание" href="https://qqqqbbpp.github.io/math/operations#3">Вычитание</Link></li>
-                                    <li><Link aria-label="Гипероперации" href="https://qqqqbbpp.github.io/math/operations#4">Гипероперации</Link>
+                                    <li><Link aria-label="Умножение" href="https://qqqqbbpp.github.io/math/operations#4">Умножение</Link></li>
+                                    <li><Link aria-label="Произведение" href="https://qqqqbbpp.github.io/math/operations#5">Произведение</Link></li>
+                                    <li><Link aria-label="Деление" href="https://qqqqbbpp.github.io/math/operations#6">Деление</Link></li>
+                                    <li><Link aria-label="Возведение в степень" href="https://qqqqbbpp.github.io/math/operations#7">Возведение в степень</Link></li>
+                                    <li><Link aria-label="Извлечение корня" href="https://qqqqbbpp.github.io/math/operations#8">Извлечение корня</Link></li>
+                                    <li><Link aria-label="Логарифмирование" href="https://qqqqbbpp.github.io/math/operations#9">Логарифмирование</Link></li>
+                                    <li><Link aria-label="Факториал" href="https://qqqqbbpp.github.io/math/operations#10">Факториал</Link></li>
+                                    <li><Link aria-label="Субфакториал" href="https://qqqqbbpp.github.io/math/operations#11">Субфакториал</Link></li>
+                                    <li><Link aria-label="Свойства" href="https://qqqqbbpp.github.io/math/operations#12">Свойства</Link>
                                         <ol className="lower-latin">
-                                            <li><Link aria-label="Умножение" href="https://qqqqbbpp.github.io/math/operations#4a">Умножение</Link></li>
-                                            <li><Link aria-label="Произведение" href="https://qqqqbbpp.github.io/math/operations#4b">Произведение</Link></li>
-                                            <li><Link aria-label="Деление" href="https://qqqqbbpp.github.io/math/operations#4c">Деление</Link></li>
-                                            <li><Link aria-label="Треугольное число" href="https://qqqqbbpp.github.io/math/operations#4d">Треугольное число</Link></li>
-                                            <li><Link aria-label="Возведение в степень" href="https://qqqqbbpp.github.io/math/operations#4e">Возведение в степень</Link></li>
-                                            <li><Link aria-label="Извлечение корня" href="https://qqqqbbpp.github.io/math/operations#4f">Извлечение корня</Link></li>
-                                            <li><Link aria-label="Логарифмирование" href="https://qqqqbbpp.github.io/math/operations#4g">Логарифмирование</Link></li>
-                                            <li><Link aria-label="Факториал" href="https://qqqqbbpp.github.io/math/operations#4h">Факториал</Link></li>
-                                        </ol>
-                                    </li>
-                                    <li><Link aria-label="Свойства" href="https://qqqqbbpp.github.io/math/operations#5">Свойства</Link>
-                                        <ol className="lower-latin">
-                                            <li><Link aria-label="Коммутативность" href="https://qqqqbbpp.github.io/math/operations#5a">Коммутативность</Link></li>
-                                            <li><Link aria-label="Ассоциативность" href="https://qqqqbbpp.github.io/math/operations#5b">Ассоциативность</Link></li>
-                                            <li><Link aria-label="Дистрибутивность" href="https://qqqqbbpp.github.io/math/operations#5c">Дистрибутивность</Link></li>
+                                            <li><Link aria-label="Коммутативность" href="https://qqqqbbpp.github.io/math/operations#12a">Коммутативность</Link></li>
+                                            <li><Link aria-label="Ассоциативность" href="https://qqqqbbpp.github.io/math/operations#12b">Ассоциативность</Link></li>
+                                            <li><Link aria-label="Дистрибутивность" href="https://qqqqbbpp.github.io/math/operations#12c">Дистрибутивность</Link></li>
                                         </ol>
                                     </li>
                                 </ol>
@@ -118,6 +114,7 @@ export default function Home() {
                                             <li><Link aria-label="Перестановки" href="https://qqqqbbpp.github.io/math/probabilities#2a">Перестановки</Link></li>
                                             <li><Link aria-label="Размещения" href="https://qqqqbbpp.github.io/math/probabilities#2b">Размещения</Link></li>
                                             <li><Link aria-label="Сочетания" href="https://qqqqbbpp.github.io/math/probabilities#2c">Сочетания</Link></li>
+                                            <li><Link aria-label="Беспорядки" href="https://qqqqbbpp.github.io/math/probabilities#2d">Беспорядки</Link></li>
                                         </ol>
                                     </li>
                                     <li><Link href="https://qqqqbbpp.github.io/math/probabilities#3">Теоремы</Link>
@@ -227,6 +224,7 @@ export default function Home() {
                                             <li><Link aria-label="Свойства операций" href="https://qqqqbbpp.github.io/math/discrete#1b">Свойства операций</Link></li>
                                             <li><Link aria-label="Элементы математической логики" href="https://qqqqbbpp.github.io/math/discrete#1c">Элементы математической логики</Link></li>
                                             <li><Link aria-label="Таблица истиности" href="https://qqqqbbpp.github.io/math/discrete#1d">Таблица истиности</Link></li>
+                                            <li><Link aria-label="Свойства логических операций" href="https://qqqqbbpp.github.io/math/discrete#1e">Свойства логических операций</Link></li>
                                         </ol>
                                     </li>
                                     <li><Link aria-label="Равносильности" href="https://qqqqbbpp.github.io/math/discrete#2">Равносильности</Link>
@@ -234,22 +232,29 @@ export default function Home() {
                                             <li><Link aria-label="Основные равносильности" href="https://qqqqbbpp.github.io/math/discrete#2a">Основные равносильности</Link></li>
                                             <li><Link aria-label="Равносильности при раскрытии логических операций" href="https://qqqqbbpp.github.io/math/discrete#2b">Равносильности при раскрытии логических операций</Link></li>
                                             <li><Link aria-label="Алгоритм доказательства равносильности логических формул" href="https://qqqqbbpp.github.io/math/discrete#2c">Алгоритм доказательства равносильности логических формул</Link></li>
+                                            <li><Link aria-label="Построение отрицания к логической формуле" href="https://qqqqbbpp.github.io/math/discrete#2d">Построение отрицания к логической формуле</Link></li>
                                         </ol>
                                     </li>
-                                    <li><Link aria-label="Построение отрицания к логической формуле" href="https://qqqqbbpp.github.io/math/discrete#3">Построение отрицания к логической формуле</Link></li>
-                                    <li><Link aria-label="Булева алгебра" href="https://qqqqbbpp.github.io/math/discrete#4">Булева алгебра</Link>
+                                    <li><Link aria-label="Булева алгебра" href="https://qqqqbbpp.github.io/math/discrete#3">Булева алгебра</Link>
                                         <ol className="lower-latin">
-                                            <li><Link aria-label="Применение булевой алгебры в теории множеств" href="https://qqqqbbpp.github.io/math/discrete#4a">Применение булевой алгебры в теории множеств</Link></li>
-                                            <li><Link aria-label="Теоретико множественные операции" href="https://qqqqbbpp.github.io/math/discrete#4b">Теоретико множественные операции</Link></li>
+                                            <li><Link aria-label="Применение булевой алгебры в теории множеств" href="https://qqqqbbpp.github.io/math/discrete#3a">Применение булевой алгебры в теории множеств</Link></li>
+                                            <li><Link aria-label="Теоретико множественные операции" href="https://qqqqbbpp.github.io/math/discrete#3b">Теоретико множественные операции</Link></li>
                                         </ol>
                                     </li>
-                                    <li><Link aria-label="Нечеткие множества" href="https://qqqqbbpp.github.io/math/discrete#5">Нечеткие множества</Link>
+                                    <li><Link aria-label="Нечеткие множества" href="https://qqqqbbpp.github.io/math/discrete#4">Нечеткие множества</Link>
                                         <ol className="lower-latin">
-                                            <li><Link aria-label="Операции над нечеткими подмножествами" href="https://qqqqbbpp.github.io/math/discrete#5a">Операции над нечеткими подмножествами</Link></li>
-                                            <li><Link aria-label="Свойства операций над нечеткими множествами" href="https://qqqqbbpp.github.io/math/discrete#5b">Свойства операций над нечеткими множествами</Link></li>
-                                            <li><Link aria-label="Геометрическая интерпритация нечетких множеств" href="https://qqqqbbpp.github.io/math/discrete#5с">Геометрическая интерпритация нечетких множеств</Link></li>
-                                            <li><Link aria-label="Элементы нечеткой логики" href="https://qqqqbbpp.github.io/math/discrete#5d">Элементы нечеткой логики</Link></li>
-                                            <li><Link aria-label="Свойства операций над нечеткими высказываниями" href="https://qqqqbbpp.github.io/math/discrete#5e">Свойства операций над нечеткими высказываниями</Link></li>
+                                            <li><Link aria-label="Операции над нечеткими подмножествами" href="https://qqqqbbpp.github.io/math/discrete#4a">Операции над нечеткими подмножествами</Link></li>
+                                            <li><Link aria-label="Свойства операций над нечеткими множествами" href="https://qqqqbbpp.github.io/math/discrete#4b">Свойства операций над нечеткими множествами</Link></li>
+                                            <li><Link aria-label="Геометрическая интерпритация нечетких множеств" href="https://qqqqbbpp.github.io/math/discrete#4с">Геометрическая интерпритация нечетких множеств</Link></li>
+                                            <li><Link aria-label="Элементы нечеткой логики" href="https://qqqqbbpp.github.io/math/discrete#4d">Элементы нечеткой логики</Link></li>
+                                            <li><Link aria-label="Свойства операций над нечеткими высказываниями" href="https://qqqqbbpp.github.io/math/discrete#4e">Свойства операций над нечеткими высказываниями</Link></li>
+                                        </ol>
+                                    </li>
+                                    <li><Link aria-label="Теория множеств" href="https://qqqqbbpp.github.io/math/discrete#5">Теория множеств</Link>
+                                        <ol className="lower-latin">
+                                            <li><Link aria-label="Мощность множества" href="https://qqqqbbpp.github.io/math/discrete#5a">Мощность множества</Link></li>
+                                            <li><Link aria-label="Декартово произведение множеств" href="https://qqqqbbpp.github.io/math/discrete#5a">Декартово произведение множеств</Link></li>
+                                            <li><Link aria-label="Формула включений и исключений" href="https://qqqqbbpp.github.io/math/discrete#5c">Формула включений и исключений</Link></li>
                                         </ol>
                                     </li>
                                 </ol>

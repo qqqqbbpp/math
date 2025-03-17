@@ -125,7 +125,7 @@ export default function Discrete() {
                             </tr>
                         </tbody>
                     </table>
-                    <h2 id="1d">Свойства логических операций</h2>
+                    <h2 id="1e">Свойства логических операций</h2>
                     <Latex>{`$$A \\wedge 1 = A, ~A \\vee 1 = 1$$`}</Latex>
                     <Latex>{`$$A \\wedge \\neg A = 0, ~A \\cup \\neg A = 1$$`}</Latex>
                     <Latex>{`$$\\neg (A \\wedge B) = \\neg A \\vee \\neg B, ~\\neg (A \\vee B) = \\neg A \\cap \\neg B$$`}</Latex>
@@ -187,12 +187,14 @@ export default function Discrete() {
                     <p>Две формулы называются равносильными если их значения истиности совпадают при любых значениях входящих в них высказываний.</p>
                     <Latex>{`$$A \\equiv B$$`}</Latex>
                     <h3 id="2a">Основные равносильности</h3>
+                    <Latex>{`$$\\neg (\\neg A) \\equiv A$$`}</Latex>
                     <Latex>{`$$A \\wedge A \\equiv A, ~A \\vee A \\equiv A$$`}</Latex>
                     <Latex>{`$$A \\wedge 1 \\equiv A, ~A \\vee 1 \\equiv 1$$`}</Latex>
                     <Latex>{`$$A \\wedge 0 \\equiv 0, ~A \\vee 0 \\equiv A$$`}</Latex>
                     <Latex>{`$$A \\wedge \\neg A \\equiv 0, ~A \\vee \\neg A = 1$$`}</Latex>
                     <Latex>{`$$x \\wedge (y \\vee x) \\equiv x, ~x \\vee (y \\wedge x) \\equiv x$$`}</Latex>
                     <h3 id="2b">Равносильности при раскрытии логических операций</h3>
+                    <Latex>{`$$\\neg (A \\wedge B) \\equiv \\neg A \\vee \\neg B$$`}</Latex>
                     <Latex>{`$$A \\Leftrightarrow B \\equiv (A \\Rightarrow B) \\cap (B \\Rightarrow A)$$`}</Latex>
                     <Latex>{`$$A \\Rightarrow B \\equiv \\neg A \\vee B$$`}</Latex>
                     <Latex>{`$$\\neg(A \\vee B) \\equiv \\neg A \\wedge \\neg B$$`}</Latex>
@@ -205,7 +207,7 @@ export default function Discrete() {
                     <p>Логическая формула, которая принимает значения единицы при любых значениях входящих в неё высказываний называется тождественно истиной или тавтологией.</p>
                     <Latex>{`$$(x \\Rightarrow y) \\Rightarrow x$$`}</Latex>
                     <p>Логическая формула принимающая значение ноль при любых значениях входящих в неё элементарных высказываний называется тождественно ложной.</p>
-                    <h2 id="3">Построение отрицания к логической формуле</h2>
+                    <h3 id="2d">Построение отрицания к логической формуле</h3>
                     <ol>
                         <li>
                             <p>Все входящии в нее элементарные высказывания меняются их отрицаниями.</p>
@@ -220,10 +222,10 @@ export default function Discrete() {
                             <Latex>{`$$\\wedge \\to \\vee, ~\\vee \\to \\wedge$$`}</Latex>
                         </li>
                     </ol>
-                    <h2 id="4">Булева алгебра</h2>
+                    <h2 id="3">Булева алгебра</h2>
                     <p>Булевой переменной называется переменная, которая принимеает значения на двухэлементном множестве. Булевой функцией называется функция от булевой переменной, принимающей значения на том же двухэлементном множестве.</p>
                     <p>Булевой алгеброй называется не пустое множество, содержащее наименьщий элемент 0 и наибольший элемент 1, на котором заданы три операции: <Latex>{`$\\vee, \\wedge, \\neg,$`}</Latex> удовлетворяющие всем аксиомам.</p>
-                    <h3 id="4a">Применение булевой алгебры в теории множеств</h3>
+                    <h3 id="3a">Применение булевой алгебры в теории множеств</h3>
                     <p>Характеристической функцией множества <Latex>{`$A$`}</Latex> (функцией принадлежности) можно задать любое подмножество <Latex>{`$E.$`}</Latex></p>
                     <Latex>{`$$
                     \\mu_A(x)=\\begin{cases}
@@ -231,7 +233,7 @@ export default function Discrete() {
                         0; &a \\not\\in A
                     \\end{cases}
                     $$`}</Latex>
-                    <h3 id="4b">Теоретико множественные операции</h3>
+                    <h3 id="3b">Теоретико множественные операции</h3>
                     <Latex>{`$$A=B \\Leftrightarrow \\mu_A = \\mu_B$$`}</Latex>
                     <Latex>{`$$A \\subset B \\Leftrightarrow \\mu_A \\geq \\mu_B$$`}</Latex>
                     <Latex>{`$$\\subset A \\quad \\mu_{\\subset A} = 1 - \\mu_A$$`}</Latex>
@@ -276,9 +278,9 @@ export default function Discrete() {
                         </tbody>
                     </table>
                     <p>Если на множестве <Latex>{`$2^E$`}</Latex> задана булева алгебра с операциями <Latex>{`$\\odot, \\oplus, \\subset,$`}</Latex> то булеву сумма и произведение можно заменить на операции взятия максимума и минимума.</p>
-                    <h2 id="5">Нечеткие множества</h2>
+                    <h2 id="4">Нечеткие множества</h2>
                     <p>Нечетким подмножеством <Latex>{`$\\tilde A$`}</Latex> называется множество всех элементов <Latex>{`$E$`}</Latex> снабженных функцией принадлежности <Latex>{`$\\mu_{\\tilde A} (x)$`}</Latex>, которая принимает значения на отрезке [0, 1].</p>
-                    <h3 id="5a">Операции над нечеткими подмножествами</h3>
+                    <h3 id="4a">Операции над нечеткими подмножествами</h3>
                     <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
                     <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde C} \\geq \\mu_{\\tilde A}$$`}</Latex>
@@ -286,11 +288,11 @@ export default function Discrete() {
                     <Latex>{`$$\\tilde A \\cap \\tilde B \\quad \\mu_{\\tilde A \\cap \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cup \\tilde B \\quad \\mu_{\\tilde A \\cup \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A \\backslash \\tilde B} = min(\\mu_{\\tilde A}, (1 - \\mu_{\\tilde B}))$$`}</Latex>
-                    <h3 id="5b">Свойства операций над нечеткими множествами</h3>
-                    <p>Свойства операций для нечетких множеств повторяют свойства обчных множеств, за исключением двух, которые не выполняются.</p>
+                    <h3 id="4b">Свойства операций над нечеткими подмножествами</h3>
+                    <p>Свойства операций для нечетких множеств повторяют свойства обычных множеств, за исключением двух, которые не выполняются.</p>
                     <Latex>{`$$\\tilde A \\cup \\subset \\tilde A \\neq E$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cap \\subset \\tilde A \\neq \\emptyset$$`}</Latex>
-                    <h3 id="5c">Геометрическая интерпритация нечетких множеств</h3>
+                    <h3 id="4c">Геометрическая интерпритация нечетких множеств</h3>
                     <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,1]}}>
                         <Coordinates.Cartesian/>
                         <Plot.OfX
@@ -347,9 +349,9 @@ export default function Discrete() {
                         />
                         <LaTeX at={[1, 1.25]} tex={String.raw`\subset \tilde A`} color="#3399ff"/>
                     </Mafs>
-                    <h3 id="5d">Элементы нечеткой логики</h3>
+                    <h3 id="4d">Элементы нечеткой логики</h3>
                     <p>Любое высказывание в бинарной логике можно сопроводить функцией истиности <Latex>{`$(A, \\mu_{\\tilde A}).$`}</Latex> В нечеткой логике каждому высказыванию соответствует функция истиности, принимающая значения на отрезке <Latex>{`$[0, 1].$`}</Latex></p>
-                    <h3 id="5e">Свойства операций над нечеткими высказываниями</h3>
+                    <h3 id="4e">Свойства операций над нечеткими высказываниями</h3>
                     <Latex>{`$$\\mu_{\\tilde A \\wedge \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A \\vee \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\neg \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
@@ -357,7 +359,28 @@ export default function Discrete() {
                     <p>Для нечетких высказываний справедливы все свойства логических операций, которе справедливы для обычных высказываний за исключением двух, которые не выполняются.</p>
                     <Latex>{`$$\\mu_{\\tilde A} \\wedge \\tilde A \\neq 0$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A} \\vee \\neg \\tilde A \\neq 1$$`}</Latex>
-                    
+                    <h2 id="5">Теория множеств</h2>
+                    <h3 id="5a">Мощность множества</h3>
+                    <p>Мощностью множества называется «колличество» элементов этого множества.</p>
+                    <Latex>{`$$|A|$$`}</Latex>
+                    <p>Неконечное множество называется счетным если его члены можно занумеровать (построить взаимноодноначное соответствие между элементами множества и множеством натуральных чисел).</p>
+                    <p>Объединение и пересечение счетных множеств является счетным множеством. Плдмножество счетных множеств является либо конечным либо счетным.</p>
+                    <p>Можность множества <Latex>{`$\\mathbb R$`}</Latex> называется континуум и обозначается <Latex>{`$c.$`}</Latex> Не существует множества больше счетного, но меньше континуума.</p>
+                    <h3 id="5b">Декартово произведение множеств</h3>
+                    <p><Latex>{`$A \\times B$`}</Latex>&nbsp;&mdash; декартово произведение множеств, где <Latex>{`$a \\in A, ~b \\in B.$`}</Latex></p>
+                    <Latex>{`$$A = \\{1, 2\\}, ~B = \\{a, b\\}$$`}</Latex>
+                    <Latex>{`$$A \\times B = \\{1, a\\}, \\{1, b\\}, \\{2, a\\}, \\{2, b\\}$$`}</Latex>
+                    <Latex>{`$$B \\times A = \\{a, 1\\}, \\{a, 2\\}, \\{b, 1\\}, \\{b, 2\\}$$`}</Latex>
+                    <Latex>{`$$A \\times B \\neq B \\times A$$`}</Latex>
+                    <p>Декартово произведение множества на себя называется декартовым квадратом.</p>
+                    <Latex>{`$$A \\times A = A^2$$`}</Latex>
+                    <p><Latex>{`$n$`}</Latex>-я декартова степень множества <Latex>{`$A$`}</Latex> определяется для целых неотрицательных <Latex>{`$n,$`}</Latex> как <Latex>{`$n$`}</Latex>-кратное декартово произведение <Latex>{`$A$`}</Latex> на себя.</p>
+                    <Latex>{`$$\\underbrace{A \\times A \\times \\ldots \\times A}_n$$`}</Latex>
+                    <h3 id="5c">Формула включений и исключений</h3>
+                    <Latex>{`$$|A| = n, ~|B| = m$$`}</Latex>
+                    <Latex>{`$$|A \\cup B| = |A| + |B| - |A \\cap B|$$`}</Latex>
+                    <Latex>{`$$|A \\backslash B| = |A| - |A \\cap B|$$`}</Latex>
+                    <Latex>{`$$|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |A \\cap C| - |B \\cap C| + |A \\cap B \\cap C|$$`}</Latex>
                 </div>
             </main>
             <Footer
