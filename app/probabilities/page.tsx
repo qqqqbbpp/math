@@ -48,7 +48,7 @@ export default function Probabilities() {
                     <p>Если выборка <Latex>{`$n$`}</Latex> элементов составляется как повторение <Latex>{`$a_1, a_2, \\ldots, a_m$`}</Latex> элемент <Latex>{`$n_1, n_2, \\ldots, n_m$`}</Latex> раз&nbsp;&mdash; такие перестановки называются перестановками с повторением.</p>
                     <Latex>{`$$\\overline{P_n} = P_{n_1, n_2, \\ldots n_m} = \\frac{n!}{n_1! \\cdot n_2! \\cdot \\ldots \\cdot n_m!}$$`}</Latex>
                     <p>Сколько различных пятибуквенных слов можно составить из букв слова «манна»?</p>
-                    <Latex>{`$$\\overline{P_5} = P_{2, 2, 1} = \\frac{2 \\cdot 3 \\cdot 4 \\cdot 5}{2 \\cdot 2} = 30$$`}</Latex>
+                    <Latex>{`$$\\overline{P_5} = P_{1, 2, 2} = \\frac{2 \\cdot 3 \\cdot 4 \\cdot 5}{1 \\cdot 2 \\cdot 2} = 30$$`}</Latex>
                     <h3 id="2b">Размещения</h3>
                     <p>Размещение из n элементов по m элементов <Latex>{`$A_n^m$`}</Latex>&nbsp;&mdash; это упорядоченный набор из m различных элементов, взятых из некоторого множества с мощностью n, где <Latex>{`$m\\leq n.$`}</Latex> То есть некая перестановка некоторых m выбранных элементов n.</p>
                     <Latex>{`$$A_n^m=\\frac{n!}{(n-m)!}$$`}</Latex>
