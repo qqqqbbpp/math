@@ -378,8 +378,8 @@ export default function Discrete() {
                     <h3 id="5c">Формула включений и исключений</h3>
                     <Latex>{`$$|A| = n, ~|B| = m$$`}</Latex>
                     <Latex>{`$$|A \\cup B| = |A| + |B| - |A \\cap B|$$`}</Latex>
-                    <Latex>{`$$|A \\backslash B| = |A| - |A \\cap B|$$`}</Latex>
                     <Latex>{`$$|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |A \\cap C| - |B \\cap C| + |A \\cap B \\cap C|$$`}</Latex>
+                    <Latex>{`$$|A \\backslash B| = |A| - |A \\cap B|$$`}</Latex>
                 </div>
             </main>
             <Footer

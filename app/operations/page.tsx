@@ -49,9 +49,9 @@ export default function Operations() {
                     <p>Факториал&nbsp;&mdash; это произведение всех положительных целых чисел от&nbsp;1&nbsp;до&nbsp;<Latex>{`$n$`}</Latex>.</p>
                     <Latex>{`$$n! = 1\\cdot 2 \\cdot \\ldots \\cdot n = \\prod\\limits_{i=1}^n i$$`}</Latex>
                     <Latex>{`$$2! = 1 \\cdot 2 = 2$$`}</Latex>
-                    <h3 id="11">Субфоктариал</h3>
+                    <h3 id="11">Субфактариал</h3>
                     <p>Субфакториал&nbsp;&mdash; это количество перестановок <Latex>{`$n$`}</Latex>&nbsp;элементов, в&nbsp;которых ни&nbsp;один элемент не&nbsp;остается на&nbsp;своем месте</p>
-                    <Latex>{`$$!n = n! \\cdot \\left(1- \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!} + \\cdots + (-1)^n \\cdot \\frac{1}{n!}\\right) = n! \\cdot \\sum\\limits_{k=0}^n \\frac{(-1)^k}{k!}$$`}</Latex>
+                    <Latex>{`$$!n = n! \\cdot \\left(1- \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!} + \\cdots + (-1)^n \\cdot \\frac{1}{n!}\\right) = n! \\cdot \\sum\\limits_{i=0}^n \\frac{(-1)^i}{i!}$$`}</Latex>
                     <Latex>{`$$!2 = 2! \\cdot \\left(1- \\frac{1}{1!} + \\frac{1}{2!} \\right) = 1$$`}</Latex>
                     <h2 id="12">Свойства</h2>
                     <p>Свойства&nbsp;&mdash; это характеристики, которые помогают понять, как операции ведут себя в&nbsp;различных ситуациях, и&nbsp;какие закономерности можно использовать для упрощения вычислений.</p>
