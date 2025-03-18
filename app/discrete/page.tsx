@@ -90,8 +90,8 @@ export default function Discrete() {
                         <tbody>
                             <tr>
                                 <td><Latex>{`$A \\backslash B$`}</Latex></td>
-                                <td>0</td>
                                 <td>1</td>
+                                <td>0</td>
                             </tr>
                             <tr>
                                 <td>1</td>
