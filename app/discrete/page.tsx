@@ -283,7 +283,7 @@ export default function Discrete() {
                     <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
                     <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde C} \\geq \\mu_{\\tilde A}$$`}</Latex>
-                    <Latex>{`$$\\subset A \\quad \\mu_{\\subset \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
+                    <Latex>{`$$\\subset \\tilde A \\quad \\mu_{\\subset \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cap \\tilde B \\quad \\mu_{\\tilde A \\cap \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cup \\tilde B \\quad \\mu_{\\tilde A \\cup \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A \\backslash \\tilde B} = min(\\mu_{\\tilde A}, (1 - \\mu_{\\tilde B}))$$`}</Latex>
@@ -354,7 +354,7 @@ export default function Discrete() {
                     <Latex>{`$$\\mu_{\\tilde A \\wedge \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A \\vee \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\mu_{\\neg \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
-                    <Latex>{`$$A \\Rightarrow B \\quad \\mu_{\\tilde B} > \\mu_{\\tilde A}$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\Rightarrow \\tilde B \\quad \\mu_{\\tilde B} > \\mu_{\\tilde A}$$`}</Latex>
                     <p>Для нечетких высказываний справедливы все свойства логических операций, которе справедливы для обычных высказываний за исключением двух, которые не выполняются.</p>
                     <Latex>{`$$\\mu_{\\tilde A} \\wedge \\tilde A \\neq 0$$`}</Latex>
                     <Latex>{`$$\\mu_{\\tilde A} \\vee \\neg \\tilde A \\neq 1$$`}</Latex>
