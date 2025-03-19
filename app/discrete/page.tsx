@@ -280,7 +280,7 @@ export default function Discrete() {
                     <h2 id="4">Нечеткие множества</h2>
                     <p>Нечетким подмножеством <Latex>{`$\\tilde A$`}</Latex> называется множество всех элементов <Latex>{`$E$`}</Latex> снабженных функцией принадлежности <Latex>{`$\\mu_{\\tilde A} (x)$`}</Latex>, которая принимает значения на отрезке [0, 1].</p>
                     <h3 id="4a">Операции над нечеткими подмножествами</h3>
-                    <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
+                    <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset \\tilde E$$`}</Latex>
                     <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde C} \\geq \\mu_{\\tilde A}$$`}</Latex>
                     <Latex>{`$$\\subset \\tilde A \\quad \\mu_{\\subset \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
