@@ -238,7 +238,7 @@ export default function Home() {
                                     <li><Link aria-label="Булева алгебра" href="https://qqqqbbpp.github.io/math/discrete#3">Булева алгебра</Link>
                                         <ol className="lower-latin">
                                             <li><Link aria-label="Применение булевой алгебры в теории множеств" href="https://qqqqbbpp.github.io/math/discrete#3a">Применение булевой алгебры в теории множеств</Link></li>
-                                            <li><Link aria-label="Теоретико множественные операции" href="https://qqqqbbpp.github.io/math/discrete#3b">Теоретико множественные операции</Link></li>
+                                            <li><Link aria-label="Теоретико-множественные операции" href="https://qqqqbbpp.github.io/math/discrete#3b">Теоретико-множественные операции</Link></li>
                                         </ol>
                                     </li>
                                     <li><Link aria-label="Нечеткие множества" href="https://qqqqbbpp.github.io/math/discrete#4">Нечеткие множества</Link>

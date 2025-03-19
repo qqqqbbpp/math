@@ -232,7 +232,7 @@ export default function Discrete() {
                         0; &a \\not\\in A
                     \\end{cases}
                     $$`}</Latex>
-                    <h3 id="3b">Теоретико множественные операции</h3>
+                    <h3 id="3b">Теоретико-множественные операции</h3>
                     <Latex>{`$$A=B \\Leftrightarrow \\mu_A = \\mu_B$$`}</Latex>
                     <Latex>{`$$A \\subset B \\Leftrightarrow \\mu_A \\geq \\mu_B$$`}</Latex>
                     <Latex>{`$$\\subset A \\quad \\mu_{\\subset A} = 1 - \\mu_A$$`}</Latex>
