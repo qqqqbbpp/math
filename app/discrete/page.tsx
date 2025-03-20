@@ -234,7 +234,7 @@ export default function Discrete() {
                     $$`}</Latex>
                     <h3 id="3b">Теоретико-множественные операции</h3>
                     <Latex>{`$$A=B \\Leftrightarrow \\mu_A = \\mu_B$$`}</Latex>
-                    <Latex>{`$$A \\subset B \\Leftrightarrow \\mu_A \\geq \\mu_B$$`}</Latex>
+                    <Latex>{`$$A \\subset B \\Leftrightarrow \\mu_B \\geq \\mu_A$$`}</Latex>
                     <Latex>{`$$\\subset A \\quad \\mu_{\\subset A} = 1 - \\mu_A$$`}</Latex>
                     <Latex>{`$$A \\cap B \\quad \\mu_{A\\cap B} = \\mu_A \\odot \\mu_B$$`}</Latex>
                     <table>
@@ -282,7 +282,7 @@ export default function Discrete() {
                     <h3 id="4a">Операции над нечеткими подмножествами</h3>
                     <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
                     <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
-                    <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde C} \\geq \\mu_{\\tilde A}$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde B} \\geq \\mu_{\\tilde A}$$`}</Latex>
                     <Latex>{`$$\\subset \\tilde A \\quad \\mu_{\\subset \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cap \\tilde B \\quad \\mu_{\\tilde A \\cap \\tilde B} = min(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cup \\tilde B \\quad \\mu_{\\tilde A \\cup \\tilde B} = max(\\mu_{\\tilde A}, \\mu_{\\tilde B})$$`}</Latex>
