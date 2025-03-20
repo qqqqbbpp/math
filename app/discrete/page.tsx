@@ -289,8 +289,8 @@ export default function Discrete() {
                     <Latex>{`$$\\mu_{\\tilde A \\backslash \\tilde B} = min(\\mu_{\\tilde A}, (1 - \\mu_{\\tilde B}))$$`}</Latex>
                     <h3 id="4b">Свойства операций над нечеткими подмножествами</h3>
                     <p>Свойства операций для нечетких множеств повторяют свойства обычных множеств, за исключением двух, которые не выполняются.</p>
-                    <Latex>{`$$\\tilde A \\cup \\subset \\tilde A \\neq E$$`}</Latex>
                     <Latex>{`$$\\tilde A \\cap \\subset \\tilde A \\neq \\emptyset$$`}</Latex>
+                    <Latex>{`$$\\tilde A \\cup \\subset \\tilde A \\neq E$$`}</Latex>
                     <h3 id="4c">Геометрическая интерпритация нечетких множеств</h3>
                     <Mafs preserveAspectRatio={false} height={300} viewBox={{x:[0,5], y:[0,1]}}>
                         <Coordinates.Cartesian/>
