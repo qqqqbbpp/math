@@ -236,26 +236,6 @@ export default function Discrete() {
                     <Latex>{`$$A=B \\Leftrightarrow \\mu_A = \\mu_B$$`}</Latex>
                     <Latex>{`$$A \\subset B \\Leftrightarrow \\mu_A \\geq \\mu_B$$`}</Latex>
                     <Latex>{`$$\\subset A \\quad \\mu_{\\subset A} = 1 - \\mu_A$$`}</Latex>
-                    <Latex>{`$$A \\cup B \\quad \\mu_{A\\cup B} = \\mu_A \\oplus \\mu_B$$`}</Latex>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td><Latex>{`$\\oplus$`}</Latex></td>
-                                <td>0</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                        </tbody>
-                    </table>
                     <Latex>{`$$A \\cap B \\quad \\mu_{A\\cap B} = \\mu_A \\odot \\mu_B$$`}</Latex>
                     <table>
                         <tbody>
@@ -272,6 +252,26 @@ export default function Discrete() {
                             <tr>
                                 <td>1</td>
                                 <td>0</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <Latex>{`$$A \\cup B \\quad \\mu_{A\\cup B} = \\mu_A \\oplus \\mu_B$$`}</Latex>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><Latex>{`$\\oplus$`}</Latex></td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
                                 <td>1</td>
                             </tr>
                         </tbody>
