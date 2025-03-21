@@ -253,7 +253,7 @@ export default function Home() {
                                     <li><Link aria-label="Теория множеств" href="https://qqqqbbpp.github.io/math/discrete#5">Теория множеств</Link>
                                         <ol className="lower-latin">
                                             <li><Link aria-label="Мощность множества" href="https://qqqqbbpp.github.io/math/discrete#5a">Мощность множества</Link></li>
-                                            <li><Link aria-label="Декартово произведение множеств" href="https://qqqqbbpp.github.io/math/discrete#5a">Декартово произведение множеств</Link></li>
+                                            <li><Link aria-label="Декартово произведение множеств" href="https://qqqqbbpp.github.io/math/discrete#5b">Декартово произведение множеств</Link></li>
                                             <li><Link aria-label="Формула включений и исключений" href="https://qqqqbbpp.github.io/math/discrete#5c">Формула включений и исключений</Link></li>
                                         </ol>
                                     </li>

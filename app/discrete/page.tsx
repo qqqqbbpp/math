@@ -14,19 +14,19 @@ export default function Discrete() {
                     <h1 id="1">Основные понятия</h1>
                     <h2 id="1a">Элементы теории множеств</h2>
                     <Latex>{`$$A \\sub B \\Leftrightarrow x \\in A \\Rightarrow x \\in B$$`}</Latex>
-                    <Latex>{`$$x \\in A \\cup B \\Leftrightarrow x \\in A \\vee x \\in B$$`}</Latex>
                     <Latex>{`$$x \\in A \\cap B \\Leftrightarrow x \\in A \\wedge x \\in B$$`}</Latex>
+                    <Latex>{`$$x \\in A \\cup B \\Leftrightarrow x \\in A \\vee x \\in B$$`}</Latex>
                     <Latex>{`$$x \\in A \\subset A \\Leftrightarrow x \\in E \\wedge x \\notin A$$`}</Latex>
                     <Latex>{`$$X \\subset A \\setminus B \\Leftrightarrow x \\in a \\wedge x \\notin B$$`}</Latex>
                     <h2 id="1b">Свойства операций</h2>
                     <Latex>{`$$A, B, C \\subset E$$`}</Latex>
-                    <Latex>{`$$A \\cup B = B \\cup A,  ~A \\cap B = B \\cap A$$`}</Latex>
-                    <Latex>{`$$A \\cup (B \\cup C) = (A \\cup B) \\cup C, ~A \\cap (B \\cap C) = (A \\cap B) \\cap C$$`}</Latex>
-                    <Latex>{`$$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C), ~A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$$`}</Latex>
-                    <Latex>{`$$A \\cup A = A, ~A \\cap A = A$$`}</Latex>
-                    <Latex>{`$$A\\cup E = E, ~A \\cap E = A$$`}</Latex>
-                    <Latex>{`$$A \\cup \\emptyset = A, ~A \\cap \\emptyset = \\emptyset$$`}</Latex>
-                    <Latex>{`$$A \\cup \\subset A = E, ~A \\cap \\subset A = \\emptyset$$`}</Latex>
+                    <Latex>{`$$A \\cap B = B \\cap A, ~A \\cup B = B \\cup A$$`}</Latex>
+                    <Latex>{`$$A \\cap (B \\cap C) = (A \\cap B) \\cap C, ~A \\cup (B \\cup C) = (A \\cup B) \\cup C$$`}</Latex>
+                    <Latex>{`$$A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C), ~A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$$`}</Latex>
+                    <Latex>{`$$A \\cap A = A, ~A \\cup A = A$$`}</Latex>
+                    <Latex>{`$$A \\cap E = A, ~A\\cup E = E$$`}</Latex>
+                    <Latex>{`$$A \\cap \\emptyset = \\emptyset, ~A \\cup \\emptyset = A$$`}</Latex>
+                    <Latex>{`$$A \\cap \\subset A = \\emptyset, ~A \\cup \\subset A = E$$`}</Latex>
                     <h2 id="1c">Элементы математической логики</h2>
                     <p>Предложение в формальной логике о котором можно сказать истино оно или ложно называется высказыванием. Если <Latex>{`$A \\vee B$`}</Latex>&nbsp;&mdash;  некоторое высказывание, то <Latex>{`$\\neg A, ~A \\cap B, ~A \\cup B, A \\Rightarrow B, ~A\\Leftrightarrow B$`}</Latex> тоже являются высказываниями.</p>
                     <h2 id="1d">Таблица истиности</h2>
@@ -127,7 +127,7 @@ export default function Discrete() {
                     </table>
                     <h2 id="1e">Свойства логических операций</h2>
                     <Latex>{`$$A \\wedge 1 = A, ~A \\vee 1 = 1$$`}</Latex>
-                    <Latex>{`$$A \\wedge \\neg A = 0, ~A \\cup \\neg A = 1$$`}</Latex>
+                    <Latex>{`$$A \\wedge \\neg A = 0, ~A \\vee \\neg A = 1$$`}</Latex>
                     <Latex>{`$$\\neg (A \\wedge B) = \\neg A \\vee \\neg B, ~\\neg (A \\vee B) = \\neg A \\cap \\neg B$$`}</Latex>
                     <Latex>{`$$$$`}</Latex>
                     <p>Если несколько высказываний связаны между собой различными знаками логических операций, то полученные выражения называют логической формулой.</p>
