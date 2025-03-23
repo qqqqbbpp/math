@@ -19,7 +19,6 @@ export default function Discrete() {
                     <Latex>{`$$x \\in A \\subset A \\Leftrightarrow x \\in E \\wedge x \\notin A$$`}</Latex>
                     <Latex>{`$$X \\subset A \\setminus B \\Leftrightarrow x \\in a \\wedge x \\notin B$$`}</Latex>
                     <h2 id="1b">Свойства операций</h2>
-                    <Latex>{`$$A, B, C \\subset E$$`}</Latex>
                     <Latex>{`$$A \\cap B = B \\cap A, ~A \\cup B = B \\cup A$$`}</Latex>
                     <Latex>{`$$A \\cap (B \\cap C) = (A \\cap B) \\cap C, ~A \\cup (B \\cup C) = (A \\cup B) \\cup C$$`}</Latex>
                     <Latex>{`$$A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C), ~A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$$`}</Latex>
@@ -278,7 +277,6 @@ export default function Discrete() {
                     <h2 id="4">Нечеткие множества</h2>
                     <p>Нечетким подмножеством <Latex>{`$\\tilde A$`}</Latex> называется множество всех элементов <Latex>{`$E$`}</Latex> снабженных функцией принадлежности <Latex>{`$\\mu_{\\tilde A} (x)$`}</Latex>, которая принимает значения на отрезке [0, 1].</p>
                     <h3 id="4a">Операции над нечеткими подмножествами</h3>
-                    <Latex>{`$$\\tilde A, \\tilde B, \\tilde C \\subset E$$`}</Latex>
                     <Latex>{`$$\\tilde A = \\tilde B \\Leftrightarrow \\mu_{\\tilde A} = \\mu_{\\tilde B}$$`}</Latex>
                     <Latex>{`$$\\tilde A \\subset \\tilde B \\Leftrightarrow \\mu_{\\tilde B} \\geq \\mu_{\\tilde A}$$`}</Latex>
                     <Latex>{`$$\\subset \\tilde A \\quad \\mu_{\\subset \\tilde A} = 1 - \\mu_{\\tilde A}$$`}</Latex>
