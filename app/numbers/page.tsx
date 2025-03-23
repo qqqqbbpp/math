@@ -48,7 +48,7 @@ export default function Numbers() {
                     <p>Вещественные числа включают в&nbsp;себя два ряда рациональных и&nbsp;иррациональных чисел.</p>
                     <h3 id="1a1">Рациональные</h3>
                     <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в виде дроби <Latex>{`$\\frac{a}{b},$`}</Latex> где <Latex>{`$a$`}</Latex> и <Latex>{`$b$`}</Latex>&nbsp;&mdash; целые числа, а <Latex>{`$b\\neq 0.$`}</Latex> Для арифметических операций используются следующие формулы:</p>
-                    <Latex>{`$$\\frac{a}{b} + \\frac{c}{d} = \\frac{ad \\pm bc}{bd}$$`}</Latex>
+                    <Latex>{`$$\\frac{a}{b} \\pm \\frac{c}{d} = \\frac{ad \\pm bc}{bd}$$`}</Latex>
                     <Latex>{`$$\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{ab}{cd}$$`}</Latex>
                     <Latex>{`$$\\frac{a}{b}:\\frac{c}{d} = \\frac{ad}{bc}$$`}</Latex>
                     <h4 id="1a1a">Целые</h4>

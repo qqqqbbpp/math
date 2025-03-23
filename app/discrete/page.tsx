@@ -129,7 +129,6 @@ export default function Discrete() {
                     <Latex>{`$$A \\wedge 1 = A, ~A \\vee 1 = 1$$`}</Latex>
                     <Latex>{`$$A \\wedge \\neg A = 0, ~A \\vee \\neg A = 1$$`}</Latex>
                     <Latex>{`$$\\neg (A \\wedge B) = \\neg A \\vee \\neg B, ~\\neg (A \\vee B) = \\neg A \\cap \\neg B$$`}</Latex>
-                    <Latex>{`$$$$`}</Latex>
                     <p>Если несколько высказываний связаны между собой различными знаками логических операций, то полученные выражения называют логической формулой.</p>
                     <p>Значение истиности логической формулы определяется логическими значениями входящих в неё высказываний. Установить истиность логической формулы можно с помощью таблицы истиности или с помощью равносильных преобразований.</p>
                     <Latex>{`$$\\neg A \\cap B \\Rightarrow A \\cup \\neg B$$`}</Latex>
@@ -192,7 +191,6 @@ export default function Discrete() {
                     <Latex>{`$$A \\wedge 1 \\equiv A, ~A \\vee 1 \\equiv 1$$`}</Latex>
                     <Latex>{`$$A \\wedge 0 \\equiv 0, ~A \\vee 0 \\equiv A$$`}</Latex>
                     <Latex>{`$$A \\wedge \\neg A \\equiv 0, ~A \\vee \\neg A = 1$$`}</Latex>
-                    <Latex>{`$$x \\wedge (y \\vee x) \\equiv x, ~x \\vee (y \\wedge x) \\equiv x$$`}</Latex>
                     <h3 id="2b">Равносильности при раскрытии логических операций</h3>
                     <Latex>{`$$A \\Leftrightarrow B \\equiv (A \\Rightarrow B) \\cap (B \\Rightarrow A)$$`}</Latex>
                     <Latex>{`$$A \\Rightarrow B \\equiv \\neg A \\vee B$$`}</Latex>
