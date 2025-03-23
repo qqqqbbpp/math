@@ -1,8 +1,4 @@
 @media (max-aspect-ratio: 9/16) {
-    main {
-        padding: 1svh 0 1svh 0;
-    }
-
     .main {
         padding: 0 2.5svw 0 2.5svw;
     }

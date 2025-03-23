@@ -1,8 +1,4 @@
-@media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {
-    main {
-        padding: 1svh 0 1svh 0;
-    }
-    
+@media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {    
     .main {
         padding: 0 10svw 0 10svw;
     }

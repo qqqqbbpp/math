@@ -75,6 +75,7 @@ header {
 main {
     background-color: #fff;
     min-height: 80svh;
+    padding: 1svh 0 1svh 0;
 }
 
 .table-of-contents {
