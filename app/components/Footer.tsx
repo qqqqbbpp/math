@@ -9,18 +9,21 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ prevPage, prevHref, nextPage, nextHref }) => {
     return (
-        <footer>
-            {prevPage && prevHref && (
-                <Link aria-label={prevPage} href={prevHref}>
-                    {'<<'}&nbsp;{prevPage}
-                </Link>
-            )}
-            {nextPage && nextHref && (
-                <Link aria-label={nextPage} href={nextHref}>
-                    {nextPage}&nbsp;{'>>'}
-                </Link>
-            )}
-        </footer>
+        <>
+            <hr />
+            <footer>
+                {prevPage && prevHref && (
+                    <Link aria-label={prevPage} href={prevHref}>
+                        {'<<'}&nbsp;{prevPage}
+                    </Link>
+                )}
+                {nextPage && nextHref && (
+                    <Link aria-label={nextPage} href={nextHref}>
+                        {nextPage}&nbsp;{'>>'}
+                    </Link>
+                )}
+            </footer>
+        </>
     );
 };
 

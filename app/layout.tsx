@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { PT_Serif } from 'next/font/google';
+import { ThemeProvider } from "next-themes";
+import Header from "@/app/components/Header";
 import "./styles/globals.css";
 import "./styles/9x16.css";
 import "./styles/9x16 - 4x3.css";
@@ -19,9 +21,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="ru">
+        <html lang="ru" suppressHydrationWarning={true}>
             <body className={`${ptSerif.variable}`}>
-                {children}
+                <ThemeProvider defaultTheme="system" enableSystem>
+                    <Header />{children}
+                </ThemeProvider>
             </body>
         </html>
     );

@@ -1,5 +1,4 @@
 "use client"
-import Header from "@/app/components/Header";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
 import { Mafs, Coordinates, Plot } from "mafs"
@@ -8,7 +7,6 @@ import Footer from "@/app/components/Footer";
 export default function Statistics() {
     return (
         <>
-            <Header />
             <main>
                 <div className="main">
                     <h1 id="1">Выборочный метод</h1>

@@ -1,5 +1,4 @@
 "use client"
-import Header from "@/app/components/Header";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
 import { Mafs, Coordinates, Line, Plot, LaTeX } from "mafs"
@@ -8,7 +7,6 @@ import Footer from "@/app/components/Footer";
 export default function Probabilities() {
     return (
         <>
-            <Header />
             <main>
                 <div className="main">
                     <h1 id="1">Основные понятия</h1>

@@ -1,5 +1,4 @@
 "use client"
-import Header from "@/app/components/Header";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import { Mafs, Coordinates, Line, useMovablePoint, Plot, Transform } from "mafs"
@@ -7,7 +6,7 @@ import Footer from "@/app/components/Footer";
 
 export default function Functions() {
 
-    const blue = "#0089ff"
+    const blue = "#0099ff"
 
     const linearFunctionPointB = useMovablePoint([0, 2], { constrain: "vertical", color: blue });
     const linearFunctionPointK = useMovablePoint([2, 0], { constrain: "horizontal", color: blue });
@@ -21,7 +20,6 @@ export default function Functions() {
 
     return (
         <>
-            <Header />
             <main>
                 <div className="main">
                     <h1 id="1">Линейные</h1>

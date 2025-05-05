@@ -1,4 +1,13 @@
 @media (max-aspect-ratio: 9/16) {
+    .theme-toggle {
+        height: 5svh;
+        width: 5svh;
+    }
+
+    .theme-toggle:hover svg {
+        transform: scale(1);
+    }
+    
     .main {
         padding: 0 2.5svw 0 2.5svw;
     }

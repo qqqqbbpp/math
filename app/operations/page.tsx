@@ -1,4 +1,3 @@
-import Header from "@/app/components/Header";
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import Footer from "@/app/components/Footer";
@@ -6,7 +5,6 @@ import Footer from "@/app/components/Footer";
 export default function Operations() {
     return (
         <>
-            <Header />
             <main>
                 <div className="main">
                     <h1 id="1">Сложение</h1>

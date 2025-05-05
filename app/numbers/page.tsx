@@ -1,5 +1,4 @@
 "use client"
-import Header from "@/app/components/Header";
 import { Mafs, Coordinates, Vector, MovablePoint, Text } from "mafs"
 import { useState } from "react";
 import Latex from 'react-latex-next';
@@ -22,7 +21,6 @@ export default function Numbers() {
 
     return (
         <>
-            <Header />
             <main>
                 <div className="main">
                     <h1 id="1">Комплексные</h1>
@@ -33,7 +31,7 @@ export default function Numbers() {
                             point={[position[0], position[1]]}
                             constrain={([x, y]) => [Math.round(x), Math.round(y)]}
                             onMove={(newPosition) => setPosition([(newPosition[0]), (newPosition[1])])}
-                            color="#0089ff"
+                            color="#0099ff"
                         />
                         <Vector tail={[0, 0]} tip={[position[0], position[1]]} />
                         <Text x={position[0] + 0.25} y={position[1] + 0.25} attach="e">
@@ -47,7 +45,47 @@ export default function Numbers() {
                     <h2 id="1a">Вещественные</h2>
                     <p>Вещественные числа включают в&nbsp;себя два ряда рациональных и&nbsp;иррациональных чисел.</p>
                     <h3 id="1a1">Рациональные</h3>
-                    <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в виде дроби <Latex>{`$\\frac{a}{b},$`}</Latex> где <Latex>{`$a$`}</Latex> и <Latex>{`$b$`}</Latex>&nbsp;&mdash; целые числа, а <Latex>{`$b\\neq 0.$`}</Latex> Для арифметических операций используются следующие формулы:</p>
+                    <p>Рациональные числа&nbsp;&mdash; это числа, которые можно представить в виде дроби <Latex>{`$\\frac{a}{b},$`}</Latex> где <Latex>{`$a$`}</Latex> и <Latex>{`$b$`}</Latex>&nbsp;&mdash; целые числа, <Latex>{`$b\\neq 0.$`}</Latex></p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><Latex>{`$n \\backslash m$`}</Latex></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td><Latex>{`$\\cdots$`}</Latex></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><Latex>{`$1 / 1$`}</Latex></td>
+                                <td><Latex>{`$1 / 2$`}</Latex></td>
+                                <td><Latex>{`$1 / 3$`}</Latex></td>
+                                <td><Latex>{`$\\cdots$`}</Latex></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><Latex>{`$2 / 1$`}</Latex></td>
+                                <td><Latex>{`$2 / 2$`}</Latex></td>
+                                <td><Latex>{`$2 / 3$`}</Latex></td>
+                                <td><Latex>{`$\\cdots$`}</Latex></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><Latex>{`$3 / 1$`}</Latex></td>
+                                <td><Latex>{`$3 / 2$`}</Latex></td>
+                                <td><Latex>{`$3 / 3$`}</Latex></td>
+                                <td><Latex>{`$\\cdots$`}</Latex></td>
+                            </tr>
+                            <tr>
+                                <td><Latex>{`$\\vdots$`}</Latex></td>
+                                <td><Latex>{`$\\vdots$`}</Latex></td>
+                                <td><Latex>{`$\\vdots$`}</Latex></td>
+                                <td><Latex>{`$\\vdots$`}</Latex></td>
+                                <td><Latex>{`$\\ddots$`}</Latex></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Для арифметических операций используются следующие формулы:</p>
                     <Latex>{`$$\\frac{a}{b} \\pm \\frac{c}{d} = \\frac{ad \\pm bc}{bd}$$`}</Latex>
                     <Latex>{`$$\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{ab}{cd}$$`}</Latex>
                     <Latex>{`$$\\frac{a}{b}:\\frac{c}{d} = \\frac{ad}{bc}$$`}</Latex>
