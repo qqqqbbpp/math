@@ -73,23 +73,15 @@ header {
 }
 
 .theme-toggle {
-    display: grid;
     justify-self: end;
     background-color: #000;
     color: #fff;
-    border: 0 !important;
 }
 
 .theme-toggle svg {
     transition: transform 0.25s cubic-bezier(0.455, 0.05, 0.515, 0.955);
     width: 100%;
     height: 100%;
-}
-
-html[data-theme='dark'] .theme-toggle:hover, 
-html[data-theme='dark'] .theme-toggle:focus {
-    background-color: #000;
-    color: #fff;
 }
 
 hr {
@@ -229,29 +221,29 @@ button {
     cursor: pointer;
 }
 
-html[data-theme='dark'] button {
+html[data-theme='dark'] .button button {
     background-color: #000;
     border: 1px solid #fff;
     color: #fff;
 }
 
-button:hover, button:focus {
+.button button:hover, .button button:focus {
     background-color: #000;
     color: #fff;	
 }
 
-html[data-theme='dark'] button:hover, html[data-theme='dark'] button:focus {
+html[data-theme='dark'] .button button:hover, html[data-theme='dark'] .button button:focus {
     background-color: #fff;
     color: #000;	
 }
 
-button:disabled {
+.button button:disabled {
     background-color: #fff;
     color: #000;
     cursor: default;
 }
 
-html[data-theme='dark'] button:disabled {
+html[data-theme='dark'] .button button:disabled {
     background-color: #000;
     color: #fff;
 }
