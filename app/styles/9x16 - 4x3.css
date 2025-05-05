@@ -1,7 +1,6 @@
 @media (min-aspect-ratio: 9/16) and (max-aspect-ratio: 4/3) {
     .theme-toggle {
         height: 5svh;
-        width: 5svh;
     }
 
     .theme-toggle:hover svg {

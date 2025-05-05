@@ -49,7 +49,7 @@ export default function Numbers() {
                     <table>
                         <tbody>
                             <tr>
-                                <td><Latex>{`$n \\backslash m$`}</Latex></td>
+                                <td><Latex>{`$a \\backslash b$`}</Latex></td>
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
