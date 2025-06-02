@@ -1,0 +1,22 @@
+@media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {
+    .theme-toggle {
+        height: 6.25svh;
+        margin: 0 2.375svh 0 0;
+    }
+
+    .main {
+        padding: 0 10svw 0 10svw;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: var(--large-4x3);
+    }
+    
+    p, .katex-display, summary, li::marker, button, a, table {
+        font-size: var(--medium-4x3);
+    }
+
+    foreignObject, text {
+        font-size: var(--small-4x3t);
+    }
+}
