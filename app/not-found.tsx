@@ -16,6 +16,7 @@ export default function NotFound() {
                     <p>Перейдите в <Link aria-label="оглавление" href="https://qqqqbbpp.github.io/math/">оглавление</Link>.</p>
                 </div>
             </main>
+            <hr />
         </>
     );
 }

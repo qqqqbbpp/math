@@ -1,9 +1,4 @@
-@media (max-aspect-ratio: 9/16) {
-    .theme-toggle {
-        height: 5svh;
-        margin: 0 3svh 0 0;
-    }
-    
+@media (max-aspect-ratio: 9/16) { 
     .main {
         padding: 0 2.5svw 0 2.5svw;
     }

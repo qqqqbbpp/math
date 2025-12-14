@@ -1,9 +1,4 @@
 @media (min-aspect-ratio: 16/9) {
-    .theme-toggle {
-        height: 7.5svh;
-        margin: 0 1.75svh 0 0;
-    }
-
     .main {
         padding: 0 20svw 0 20svw;
     }
