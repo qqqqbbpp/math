@@ -13,7 +13,7 @@
     --medium-16x9: calc(1rem + 16/9 * 0.5svh + 0.5svw);
     --small-16x9: calc(1rem + 16/9 * 0.25svh + 0.25svw);
 
-    --blue: #6666ff;
+    --blue: #3399ff;
     --purple: #ff66ff;
 }
 
