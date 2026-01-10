@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" viewBox="0 0 30 30">
+<polyline class="c3-svg" points="7.5,5.0000005 2.5,5.0000005 2.5,2.5 7.5,2.5000005 "/>
+<path d="M15.2189999,2.5H17.5v5h-2.2810001"/>
+<path d="M22.5,7.5v-5H25v5"/>
+<path d="M5.2189999,12.5H7.5v5H5.2189999"/>
+<path d="M24.7709999,17.5H22.5v-5h2.2709999"/>
+<path d="M5.2189999,22.5H7.5v5H5.2189999"/>
+<path d="M12.5,22.5h2.2810001v5H12.5"/>
+<polyline points="27.5,22.5 27.5,25 27.5,25 22.5,25 22.5,22.5 "/>
+</svg>
